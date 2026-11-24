@@ -78,6 +78,38 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   section.work{padding:52px 0}
 }
 @media (max-width:480px){ .wrap{padding:0 16px} .shots{grid-template-columns:1fr} }
+.print-only{display:none}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  body{font-size:12px;line-height:1.6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  header.top{display:none}
+  .wrap{max-width:none;padding:0}
+  .hero{padding:0 0 18px}
+  .hero h1{font-size:30px;margin:6px 0 8px}
+  .hero p.lead{font-size:13px}
+  .facts{display:none}
+  .fact b{font-size:20px}
+  section.work{padding:22px 0;break-before:page}
+  #shopiq{break-before:auto}
+  #tools{break-before:auto;break-inside:avoid}
+  #shopiq .grid{grid-template-columns:1fr 1fr}
+  .work h2{font-size:21px}
+  .work .sub{margin-bottom:14px}
+  .grid,.grid.rev{grid-template-columns:1.15fr 1fr;gap:22px}
+  .sco li{padding:8px 0}
+  video{display:none!important}
+  .print-only{display:block}
+  figcaption .print-only{margin-top:2px;color:var(--accent)}
+  a.print-only img{width:100%;border:1px solid var(--line);border-radius:4px}
+  .vertical{max-width:230px}
+  .btn{border:none;padding:0;font-size:11.5px;color:var(--accent)}
+  .btn.primary{background:none;color:var(--accent)}
+  .links .btn::after,.card .btn::after{content:" — " attr(href)}
+  .cards{grid-template-columns:repeat(3,1fr);gap:12px}
+  .card{padding:14px;break-inside:avoid}
+  .card p{font-size:12px}
+  footer{padding:20px 0 0}
+}
 </style>
 </head>
 <body>
@@ -100,6 +132,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="eyebrow">Portfolio</div>
     <h1>최주영</h1>
     <p class="lead">공주교육대학교 초등교육과(수학 심화) 재학<br>생성형 AI로 직접 만든 사이트, 영상, 업무 도구를 모았습니다.</p>
+    <p class="print-only" style="margin-top:6px;font-size:12px">온라인 버전(영상 재생·도구 실행): <a href="https://ebbf0217.github.io/">https://ebbf0217.github.io</a></p>
     <div class="facts">
       <div class="fact"><b>25곳</b><span>SHOPIQ가 6시간마다 수집하는 공식몰</span></div>
       <div class="fact"><b>우수상</b><span>교육부·KERIS 숏폼 공모전</span></div>
@@ -117,10 +150,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <p class="sub">2026.06 · 생성형 AI로 기획·제작 · HTML/JS</p>
     <div class="grid">
       <figure class="media" style="margin:0">
-        <img src="assets/img/shopiq-sale.jpg" alt="세일 화면: 공식몰 25곳의 20% 이상 할인 상품 수와 최대 할인율" loading="lazy">
+        <img src="assets/img/shopiq-sale.jpg?v=2" alt="세일 화면: 공식몰 25곳의 20% 이상 할인 상품 수와 최대 할인율" loading="lazy">
         <div class="shots">
-          <img src="assets/img/shopiq-news.jpg" alt="뉴스 화면: 패션·리테일 매체 기사 제목과 브랜드 태그" loading="lazy">
-          <img src="assets/img/shopiq-calc.jpg" alt="총비용 계산기: 환율, 관세, 배송 경로별 원화 총액 비교" loading="lazy">
+          <img src="assets/img/shopiq-news.jpg?v=2" alt="뉴스 화면: 패션·리테일 매체 기사 제목과 브랜드 태그" loading="lazy">
+          <img src="assets/img/shopiq-calc.jpg?v=2" alt="총비용 계산기: 환율, 관세, 배송 경로별 원화 총액 비교" loading="lazy">
         </div>
         <figcaption>세일 자동 수집(2026.11.24 기준) · 뉴스 · 구매 경로별 총비용(원화) 비교</figcaption>
       </figure>
@@ -154,8 +187,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <li><span class="k">제작</span><p>영상 생성 AI, AI 음성, 실제 서비스 화면 녹화를 합쳐 혼자 만들었습니다. AI로 아이를 그릴 수 없어서 동물 캐릭터를 썼습니다.</p></li>
       </ul>
       <figure class="media vertical" style="margin:0 auto">
-        <video src="assets/video/toctoc-shorts.mp4" poster="assets/img/toctoc-poster.jpg" controls preload="none" playsinline></video>
-        <figcaption>출품작 전체 (77초, 소리 있음)</figcaption>
+        <video src="assets/video/toctoc-shorts.mp4" poster="assets/img/toctoc-poster.jpg?v=2" controls preload="none" playsinline></video>
+        <a class="print-only" href="https://ebbf0217.github.io/assets/video/toctoc-shorts.mp4"><img src="assets/img/toctoc-poster.jpg?v=2" alt="출품작 썸네일"></a>
+        <figcaption>출품작 전체 (77초, 소리 있음)<span class="print-only">영상 보기: https://ebbf0217.github.io/assets/video/toctoc-shorts.mp4</span></figcaption>
       </figure>
     </div>
   </div>
@@ -168,8 +202,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <h2>AI 다큐멘터리 〈확률론의 시초와 통계학〉</h2>
     <p class="sub">2026.11 · 수학의 역사 수업 발표 때 상영 · 10분 30초</p>
     <figure class="media" style="margin:0">
-      <video src="assets/video/probability-documentary.mp4" poster="assets/img/doc-poster.jpg" controls preload="none" playsinline></video>
-      <figcaption>웹 게시용 720p 압축본</figcaption>
+      <video src="assets/video/probability-documentary.mp4" poster="assets/img/doc-poster.jpg?v=2" controls preload="none" playsinline></video>
+      <a class="print-only" href="https://ebbf0217.github.io/assets/video/probability-documentary.mp4"><img src="assets/img/doc-poster.jpg?v=2" alt="다큐 썸네일"></a>
+      <figcaption>웹 게시용 720p 압축본<span class="print-only">영상 보기: https://ebbf0217.github.io/assets/video/probability-documentary.mp4</span></figcaption>
     </figure>
     <div class="grid" style="margin-top:28px">
       <ul class="sco">
@@ -194,13 +229,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <div class="meta">OCR</div>
         <h3>문서 이미지 글자 편집기</h3>
         <p>캡처한 문서 이미지에서 글자를 읽어 들여, 원래 위치에 맞춰 문구만 고친 뒤 다시 이미지로 저장합니다.</p>
-        <a class="btn" href="tools/image-editor/">열어 보기</a>
+        <a class="btn" href="https://ebbf0217.github.io/tools/image-editor/">열어 보기</a>
       </div>
       <div class="card">
         <div class="meta">문제은행</div>
         <h3>토익 문법 체육관</h3>
         <p>유형별 문법 문제 750여 개를 모아 만든 연습장입니다. 틀린 문제만 다시 풀 수 있습니다.</p>
-        <a class="btn" href="tools/toeic-gym/">열어 보기</a>
+        <a class="btn" href="https://ebbf0217.github.io/tools/toeic-gym/">열어 보기</a>
       </div>
       <div class="card">
         <div class="meta">수업용 게임 · 단독 개발</div>
