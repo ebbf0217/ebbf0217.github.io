@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문서 이미지 글자 편집기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+<script>/*! For license information please see tesseract.min.js.LICENSE.txt */
+!function(t,r){"object"==typeof exports&&"object"==typeof module?module.exports=r():"function"==typeof define&&define.amd?define([],r):"object"==typeof exports?exports.Tesseract=r():t.Tesseract=r()}(self,(()=>(()=>{var t={670:t=>{function r(t){return r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},r(t)}t.exports=function(){return"undefined"!=typeof window&&"object"===r(window.process)&&"renderer"===window.process.type||!("undefined"==typeof process||"object"!==r(process.versions)||!process.versions.electron)||"object"===("undefined"==typeof navigator?"undefined":r(navigator))&&"string"==typeof navigator.userAgent&&navigator.userAgent.indexOf("Electron")>=0}},760:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}var o=function(t){"use strict";var r,e=Object.prototype,o=e.hasOwnProperty,i=Object.defineProperty||function(t,r,e){t[r]=e.value},a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",u=a.asyncIterator||"@@asyncIterator",f=a.toStringTag||"@@toStringTag";function l(t,r,e){return Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[r]}try{l({},"")}catch(t){l=function(t,r,e){return t[r]=e}}function s(t,r,e,n){var o=r&&r.prototype instanceof m?r:m,a=Object.create(o.prototype),c=new N(n||[]);return i(a,"_invoke",{value:P(t,e,c)}),a}function h(t,r,e){try{return{type:"normal",arg:t.call(r,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var p="suspendedStart",y="suspendedYield",v="executing",d="completed",g={};function m(){}function b(){}function w(){}var x={};l(x,c,(function(){return this}));var L=Object.getPrototypeOf,O=L&&L(L(A([])));O&&O!==e&&o.call(O,c)&&(x=O);var E=w.prototype=m.prototype=Object.create(x);function S(t){["next","throw","return"].forEach((function(r){l(t,r,(function(t){return this._invoke(r,t)}))}))}function j(t,r){function e(i,a,c,u){var f=h(t[i],t,a);if("throw"!==f.type){var l=f.arg,s=l.value;return s&&"object"===n(s)&&o.call(s,"__await")?r.resolve(s.__await).then((function(t){e("next",t,c,u)}),(function(t){e("throw",t,c,u)})):r.resolve(s).then((function(t){l.value=t,c(l)}),(function(t){return e("throw",t,c,u)}))}u(f.arg)}var a;i(this,"_invoke",{value:function(t,n){function o(){return new r((function(r,o){e(t,n,r,o)}))}return a=a?a.then(o,o):o()}})}function P(t,r,e){var n=p;return function(o,i){if(n===v)throw new Error("Generator is already running");if(n===d){if("throw"===o)throw i;return G()}for(e.method=o,e.arg=i;;){var a=e.delegate;if(a){var c=k(a,e);if(c){if(c===g)continue;return c}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if(n===p)throw n=d,e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);n=v;var u=h(t,r,e);if("normal"===u.type){if(n=e.done?d:y,u.arg===g)continue;return{value:u.arg,done:e.done}}"throw"===u.type&&(n=d,e.method="throw",e.arg=u.arg)}}}function k(t,e){var n=e.method,o=t.iterator[n];if(o===r)return e.delegate=null,"throw"===n&&t.iterator.return&&(e.method="return",e.arg=r,k(t,e),"throw"===e.method)||"return"!==n&&(e.method="throw",e.arg=new TypeError("The iterator does not provide a '"+n+"' method")),g;var i=h(o,t.iterator,e.arg);if("throw"===i.type)return e.method="throw",e.arg=i.arg,e.delegate=null,g;var a=i.arg;return a?a.done?(e[t.resultName]=a.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=r),e.delegate=null,g):a:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,g)}function _(t){var r={tryLoc:t[0]};1 in t&&(r.catchLoc=t[1]),2 in t&&(r.finallyLoc=t[2],r.afterLoc=t[3]),this.tryEntries.push(r)}function T(t){var r=t.completion||{};r.type="normal",delete r.arg,t.completion=r}function N(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(_,this),this.reset(!0)}function A(t){if(t){var e=t[c];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(o.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=r,e.done=!0,e};return i.next=i}}return{next:G}}function G(){return{value:r,done:!0}}return b.prototype=w,i(E,"constructor",{value:w,configurable:!0}),i(w,"constructor",{value:b,configurable:!0}),b.displayName=l(w,f,"GeneratorFunction"),t.isGeneratorFunction=function(t){var r="function"==typeof t&&t.constructor;return!!r&&(r===b||"GeneratorFunction"===(r.displayName||r.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,w):(t.__proto__=w,l(t,f,"GeneratorFunction")),t.prototype=Object.create(E),t},t.awrap=function(t){return{__await:t}},S(j.prototype),l(j.prototype,u,(function(){return this})),t.AsyncIterator=j,t.async=function(r,e,n,o,i){void 0===i&&(i=Promise);var a=new j(s(r,e,n,o),i);return t.isGeneratorFunction(e)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},S(E),l(E,f,"Generator"),l(E,c,(function(){return this})),l(E,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var r=Object(t),e=[];for(var n in r)e.push(n);return e.reverse(),function t(){for(;e.length;){var n=e.pop();if(n in r)return t.value=n,t.done=!1,t}return t.done=!0,t}},t.values=A,N.prototype={constructor:N,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=r,this.done=!1,this.delegate=null,this.method="next",this.arg=r,this.tryEntries.forEach(T),!t)for(var e in this)"t"===e.charAt(0)&&o.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=r)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(n,o){return c.type="throw",c.arg=t,e.next=n,o&&(e.method="next",e.arg=r),!!o}for(var i=this.tryEntries.length-1;i>=0;--i){var a=this.tryEntries[i],c=a.completion;if("root"===a.tryLoc)return n("end");if(a.tryLoc<=this.prev){var u=o.call(a,"catchLoc"),f=o.call(a,"finallyLoc");if(u&&f){if(this.prev<a.catchLoc)return n(a.catchLoc,!0);if(this.prev<a.finallyLoc)return n(a.finallyLoc)}else if(u){if(this.prev<a.catchLoc)return n(a.catchLoc,!0)}else{if(!f)throw new Error("try statement without catch or finally");if(this.prev<a.finallyLoc)return n(a.finallyLoc)}}}},abrupt:function(t,r){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc<=this.prev&&o.call(n,"finallyLoc")&&this.prev<n.finallyLoc){var i=n;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=r&&r<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=r,i?(this.method="next",this.next=i.finallyLoc,g):this.complete(a)},complete:function(t,r){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&r&&(this.next=r),g},finish:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),T(e),g}},catch:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc===t){var n=e.completion;if("throw"===n.type){var o=n.arg;T(e)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:A(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=r),g}},t}("object"===n(t=e.nmd(t))?t.exports:{});try{regeneratorRuntime=o}catch(t){"object"===("undefined"==typeof globalThis?"undefined":n(globalThis))?globalThis.regeneratorRuntime=o:Function("r","regeneratorRuntime = r")(o)}},793:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}function o(){"use strict";o=function(){return t};var t={},r=Object.prototype,e=r.hasOwnProperty,i=Object.defineProperty||function(t,r,e){t[r]=e.value},a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",u=a.asyncIterator||"@@asyncIterator",f=a.toStringTag||"@@toStringTag";function l(t,r,e){return Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[r]}try{l({},"")}catch(t){l=function(t,r,e){return t[r]=e}}function s(t,r,e,n){var o=r&&r.prototype instanceof y?r:y,a=Object.create(o.prototype),c=new P(n||[]);return i(a,"_invoke",{value:O(t,e,c)}),a}function h(t,r,e){try{return{type:"normal",arg:t.call(r,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var p={};function y(){}function v(){}function d(){}var g={};l(g,c,(function(){return this}));var m=Object.getPrototypeOf,b=m&&m(m(k([])));b&&b!==r&&e.call(b,c)&&(g=b);var w=d.prototype=y.prototype=Object.create(g);function x(t){["next","throw","return"].forEach((function(r){l(t,r,(function(t){return this._invoke(r,t)}))}))}function L(t,r){function o(i,a,c,u){var f=h(t[i],t,a);if("throw"!==f.type){var l=f.arg,s=l.value;return s&&"object"==n(s)&&e.call(s,"__await")?r.resolve(s.__await).then((function(t){o("next",t,c,u)}),(function(t){o("throw",t,c,u)})):r.resolve(s).then((function(t){l.value=t,c(l)}),(function(t){return o("throw",t,c,u)}))}u(f.arg)}var a;i(this,"_invoke",{value:function(t,e){function n(){return new r((function(r,n){o(t,e,r,n)}))}return a=a?a.then(n,n):n()}})}function O(t,r,e){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(e.method=o,e.arg=i;;){var a=e.delegate;if(a){var c=E(a,e);if(c){if(c===p)continue;return c}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if("suspendedStart"===n)throw n="completed",e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);n="executing";var u=h(t,r,e);if("normal"===u.type){if(n=e.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:e.done}}"throw"===u.type&&(n="completed",e.method="throw",e.arg=u.arg)}}}function E(t,r){var e=r.method,n=t.iterator[e];if(void 0===n)return r.delegate=null,"throw"===e&&t.iterator.return&&(r.method="return",r.arg=void 0,E(t,r),"throw"===r.method)||"return"!==e&&(r.method="throw",r.arg=new TypeError("The iterator does not provide a '"+e+"' method")),p;var o=h(n,t.iterator,r.arg);if("throw"===o.type)return r.method="throw",r.arg=o.arg,r.delegate=null,p;var i=o.arg;return i?i.done?(r[t.resultName]=i.value,r.next=t.nextLoc,"return"!==r.method&&(r.method="next",r.arg=void 0),r.delegate=null,p):i:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,p)}function S(t){var r={tryLoc:t[0]};1 in t&&(r.catchLoc=t[1]),2 in t&&(r.finallyLoc=t[2],r.afterLoc=t[3]),this.tryEntries.push(r)}function j(t){var r=t.completion||{};r.type="normal",delete r.arg,t.completion=r}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(S,this),this.reset(!0)}function k(t){if(t){var r=t[c];if(r)return r.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,o=function r(){for(;++n<t.length;)if(e.call(t,n))return r.value=t[n],r.done=!1,r;return r.value=void 0,r.done=!0,r};return o.next=o}}return{next:_}}function _(){return{value:void 0,done:!0}}return v.prototype=d,i(w,"constructor",{value:d,configurable:!0}),i(d,"constructor",{value:v,configurable:!0}),v.displayName=l(d,f,"GeneratorFunction"),t.isGeneratorFunction=function(t){var r="function"==typeof t&&t.constructor;return!!r&&(r===v||"GeneratorFunction"===(r.displayName||r.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,l(t,f,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},x(L.prototype),l(L.prototype,u,(function(){return this})),t.AsyncIterator=L,t.async=function(r,e,n,o,i){void 0===i&&(i=Promise);var a=new L(s(r,e,n,o),i);return t.isGeneratorFunction(e)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},x(w),l(w,f,"Generator"),l(w,c,(function(){return this})),l(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var r=Object(t),e=[];for(var n in r)e.push(n);return e.reverse(),function t(){for(;e.length;){var n=e.pop();if(n in r)return t.value=n,t.done=!1,t}return t.done=!0,t}},t.values=k,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(j),!t)for(var r in this)"t"===r.charAt(0)&&e.call(this,r)&&!isNaN(+r.slice(1))&&(this[r]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var r=this;function n(e,n){return a.type="throw",a.arg=t,r.next=e,n&&(r.method="next",r.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=e.call(i,"catchLoc"),u=e.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,r){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&e.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=r&&r<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=r,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,r){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&r&&(this.next=r),p},finish:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),j(e),p}},catch:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc===t){var n=e.completion;if("throw"===n.type){var o=n.arg;j(e)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,r,e){return this.delegate={iterator:k(t),resultName:r,nextLoc:e},"next"===this.method&&(this.arg=void 0),p}},t}function i(t,r,e,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void e(t)}c.done?r(u):Promise.resolve(u).then(n,o)}function a(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var a=t.apply(r,e);function c(t){i(a,n,o,c,u,"next",t)}function u(t){i(a,n,o,c,u,"throw",t)}c(void 0)}))}}var c=e(311),u=function(){var t=a(o().mark((function t(r,e,n){var i;return o().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,c(e,1,n);case 2:return i=t.sent,t.abrupt("return",i.recognize(r).finally(a(o().mark((function t(){return o().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,i.terminate();case 2:case"end":return t.stop()}}),t)})))));case 4:case"end":return t.stop()}}),t)})));return function(r,e,n){return t.apply(this,arguments)}}(),f=function(){var t=a(o().mark((function t(r,e){var n;return o().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,c("osd",0,e);case 2:return n=t.sent,t.abrupt("return",n.detect(r).finally(a(o().mark((function t(){return o().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,n.terminate();case 2:case"end":return t.stop()}}),t)})))));case 4:case"end":return t.stop()}}),t)})));return function(r,e){return t.apply(this,arguments)}}();t.exports={recognize:u,detect:f}},847:t=>{t.exports={TESSERACT_ONLY:0,LSTM_ONLY:1,TESSERACT_LSTM_COMBINED:2,DEFAULT:3}},711:t=>{t.exports={OSD_ONLY:"0",AUTO_OSD:"1",AUTO_ONLY:"2",AUTO:"3",SINGLE_COLUMN:"4",SINGLE_BLOCK_VERT_TEXT:"5",SINGLE_BLOCK:"6",SINGLE_LINE:"7",SINGLE_WORD:"8",CIRCLE_WORD:"9",SINGLE_CHAR:"10",SPARSE_TEXT:"11",SPARSE_TEXT_OSD:"12",RAW_LINE:"13"}},341:t=>{t.exports={workerBlobURL:!0,logger:function(){}}},5:t=>{t.exports={AFR:"afr",AMH:"amh",ARA:"ara",ASM:"asm",AZE:"aze",AZE_CYRL:"aze_cyrl",BEL:"bel",BEN:"ben",BOD:"bod",BOS:"bos",BUL:"bul",CAT:"cat",CEB:"ceb",CES:"ces",CHI_SIM:"chi_sim",CHI_TRA:"chi_tra",CHR:"chr",CYM:"cym",DAN:"dan",DEU:"deu",DZO:"dzo",ELL:"ell",ENG:"eng",ENM:"enm",EPO:"epo",EST:"est",EUS:"eus",FAS:"fas",FIN:"fin",FRA:"fra",FRK:"frk",FRM:"frm",GLE:"gle",GLG:"glg",GRC:"grc",GUJ:"guj",HAT:"hat",HEB:"heb",HIN:"hin",HRV:"hrv",HUN:"hun",IKU:"iku",IND:"ind",ISL:"isl",ITA:"ita",ITA_OLD:"ita_old",JAV:"jav",JPN:"jpn",KAN:"kan",KAT:"kat",KAT_OLD:"kat_old",KAZ:"kaz",KHM:"khm",KIR:"kir",KOR:"kor",KUR:"kur",LAO:"lao",LAT:"lat",LAV:"lav",LIT:"lit",MAL:"mal",MAR:"mar",MKD:"mkd",MLT:"mlt",MSA:"msa",MYA:"mya",NEP:"nep",NLD:"nld",NOR:"nor",ORI:"ori",PAN:"pan",POL:"pol",POR:"por",PUS:"pus",RON:"ron",RUS:"rus",SAN:"san",SIN:"sin",SLK:"slk",SLV:"slv",SPA:"spa",SPA_OLD:"spa_old",SQI:"sqi",SRP:"srp",SRP_LATN:"srp_latn",SWA:"swa",SWE:"swe",SYR:"syr",TAM:"tam",TEL:"tel",TGK:"tgk",TGL:"tgl",THA:"tha",TIR:"tir",TUR:"tur",UIG:"uig",UKR:"ukr",URD:"urd",UZB:"uzb",UZB_CYRL:"uzb_cyrl",VIE:"vie",YID:"yid"}},106:(t,r,e)=>{var n=e(313),o=0;t.exports=function(t){var r=t.id,e=t.action,i=t.payload,a=void 0===i?{}:i,c=r;return void 0===c&&(c=n("Job",o),o+=1),{id:c,action:e,payload:a}}},936:function(t,r,e){function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}var o=this;function i(){"use strict";i=function(){return t};var t={},r=Object.prototype,e=r.hasOwnProperty,o=Object.defineProperty||function(t,r,e){t[r]=e.value},a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",u=a.asyncIterator||"@@asyncIterator",f=a.toStringTag||"@@toStringTag";function l(t,r,e){return Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[r]}try{l({},"")}catch(t){l=function(t,r,e){return t[r]=e}}function s(t,r,e,n){var i=r&&r.prototype instanceof y?r:y,a=Object.create(i.prototype),c=new P(n||[]);return o(a,"_invoke",{value:O(t,e,c)}),a}function h(t,r,e){try{return{type:"normal",arg:t.call(r,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var p={};function y(){}function v(){}function d(){}var g={};l(g,c,(function(){return this}));var m=Object.getPrototypeOf,b=m&&m(m(k([])));b&&b!==r&&e.call(b,c)&&(g=b);var w=d.prototype=y.prototype=Object.create(g);function x(t){["next","throw","return"].forEach((function(r){l(t,r,(function(t){return this._invoke(r,t)}))}))}function L(t,r){function i(o,a,c,u){var f=h(t[o],t,a);if("throw"!==f.type){var l=f.arg,s=l.value;return s&&"object"==n(s)&&e.call(s,"__await")?r.resolve(s.__await).then((function(t){i("next",t,c,u)}),(function(t){i("throw",t,c,u)})):r.resolve(s).then((function(t){l.value=t,c(l)}),(function(t){return i("throw",t,c,u)}))}u(f.arg)}var a;o(this,"_invoke",{value:function(t,e){function n(){return new r((function(r,n){i(t,e,r,n)}))}return a=a?a.then(n,n):n()}})}function O(t,r,e){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(e.method=o,e.arg=i;;){var a=e.delegate;if(a){var c=E(a,e);if(c){if(c===p)continue;return c}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if("suspendedStart"===n)throw n="completed",e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);n="executing";var u=h(t,r,e);if("normal"===u.type){if(n=e.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:e.done}}"throw"===u.type&&(n="completed",e.method="throw",e.arg=u.arg)}}}function E(t,r){var e=r.method,n=t.iterator[e];if(void 0===n)return r.delegate=null,"throw"===e&&t.iterator.return&&(r.method="return",r.arg=void 0,E(t,r),"throw"===r.method)||"return"!==e&&(r.method="throw",r.arg=new TypeError("The iterator does not provide a '"+e+"' method")),p;var o=h(n,t.iterator,r.arg);if("throw"===o.type)return r.method="throw",r.arg=o.arg,r.delegate=null,p;var i=o.arg;return i?i.done?(r[t.resultName]=i.value,r.next=t.nextLoc,"return"!==r.method&&(r.method="next",r.arg=void 0),r.delegate=null,p):i:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,p)}function S(t){var r={tryLoc:t[0]};1 in t&&(r.catchLoc=t[1]),2 in t&&(r.finallyLoc=t[2],r.afterLoc=t[3]),this.tryEntries.push(r)}function j(t){var r=t.completion||{};r.type="normal",delete r.arg,t.completion=r}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(S,this),this.reset(!0)}function k(t){if(t){var r=t[c];if(r)return r.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,o=function r(){for(;++n<t.length;)if(e.call(t,n))return r.value=t[n],r.done=!1,r;return r.value=void 0,r.done=!0,r};return o.next=o}}return{next:_}}function _(){return{value:void 0,done:!0}}return v.prototype=d,o(w,"constructor",{value:d,configurable:!0}),o(d,"constructor",{value:v,configurable:!0}),v.displayName=l(d,f,"GeneratorFunction"),t.isGeneratorFunction=function(t){var r="function"==typeof t&&t.constructor;return!!r&&(r===v||"GeneratorFunction"===(r.displayName||r.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,l(t,f,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},x(L.prototype),l(L.prototype,u,(function(){return this})),t.AsyncIterator=L,t.async=function(r,e,n,o,i){void 0===i&&(i=Promise);var a=new L(s(r,e,n,o),i);return t.isGeneratorFunction(e)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},x(w),l(w,f,"Generator"),l(w,c,(function(){return this})),l(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var r=Object(t),e=[];for(var n in r)e.push(n);return e.reverse(),function t(){for(;e.length;){var n=e.pop();if(n in r)return t.value=n,t.done=!1,t}return t.done=!0,t}},t.values=k,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(j),!t)for(var r in this)"t"===r.charAt(0)&&e.call(this,r)&&!isNaN(+r.slice(1))&&(this[r]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var r=this;function n(e,n){return a.type="throw",a.arg=t,r.next=e,n&&(r.method="next",r.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=e.call(i,"catchLoc"),u=e.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,r){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&e.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=r&&r<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=r,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,r){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&r&&(this.next=r),p},finish:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),j(e),p}},catch:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc===t){var n=e.completion;if("throw"===n.type){var o=n.arg;j(e)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,r,e){return this.delegate={iterator:k(t),resultName:r,nextLoc:e},"next"===this.method&&(this.arg=void 0),p}},t}function a(t,r){(null==r||r>t.length)&&(r=t.length);for(var e=0,n=new Array(r);e<r;e++)n[e]=t[e];return n}function c(t,r,e,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void e(t)}c.done?r(u):Promise.resolve(u).then(n,o)}function u(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var i=t.apply(r,e);function a(t){c(i,n,o,a,u,"next",t)}function u(t){c(i,n,o,a,u,"throw",t)}a(void 0)}))}}var f=e(106),l=e(185).log,s=e(313),h=0;t.exports=function(){var t=s("Scheduler",h),r={},e={},n=[];h+=1;var c=function(){return Object.keys(r).length},p=function(){if(0!==n.length)for(var t=Object.keys(r),o=0;o<t.length;o+=1)if(void 0===e[t[o]]){n[0](r[t[o]]);break}},y=function(r,c){return new Promise((function(s,h){var y=f({action:r,payload:c});n.push(function(){var t=u(i().mark((function t(u){return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return n.shift(),e[u.id]=y,t.prev=2,t.t0=s,t.next=6,u[r].apply(o,[].concat(function(t){if(Array.isArray(t))return a(t)}(i=c)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(i)||function(t,r){if(t){if("string"==typeof t)return a(t,r);var e=Object.prototype.toString.call(t).slice(8,-1);return"Object"===e&&t.constructor&&(e=t.constructor.name),"Map"===e||"Set"===e?Array.from(t):"Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e)?a(t,r):void 0}}(i)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}(),[y.id]));case 6:t.t1=t.sent,(0,t.t0)(t.t1),t.next=13;break;case 10:t.prev=10,t.t2=t.catch(2),h(t.t2);case 13:return t.prev=13,delete e[u.id],p(),t.finish(13);case 17:case"end":return t.stop()}var i}),t,null,[[2,10,13,17]])})));return function(r){return t.apply(this,arguments)}}()),l("[".concat(t,"]: Add ").concat(y.id," to JobQueue")),l("[".concat(t,"]: JobQueue length=").concat(n.length)),p()}))},v=function(){var r=u(i().mark((function r(e){var n,o,a,u=arguments;return i().wrap((function(r){for(;;)switch(r.prev=r.next){case 0:if(0!==c()){r.next=2;break}throw Error("[".concat(t,"]: You need to have at least one worker before adding jobs"));case 2:for(n=u.length,o=new Array(n>1?n-1:0),a=1;a<n;a++)o[a-1]=u[a];return r.abrupt("return",y(e,o));case 4:case"end":return r.stop()}}),r)})));return function(t){return r.apply(this,arguments)}}(),d=function(){var t=u(i().mark((function t(){return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:Object.keys(r).forEach(function(){var t=u(i().mark((function t(e){return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,r[e].terminate();case 2:case"end":return t.stop()}}),t)})));return function(r){return t.apply(this,arguments)}}()),n=[];case 2:case"end":return t.stop()}}),t)})));return function(){return t.apply(this,arguments)}}();return{addWorker:function(e){return r[e.id]=e,l("[".concat(t,"]: Add ").concat(e.id)),l("[".concat(t,"]: Number of workers=").concat(c())),p(),e.id},addJob:v,terminate:d,getQueueLen:function(){return n.length},getNumWorkers:c}}},311:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}var o=["logger","errorHandler"];function i(){"use strict";i=function(){return t};var t={},r=Object.prototype,e=r.hasOwnProperty,o=Object.defineProperty||function(t,r,e){t[r]=e.value},a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",u=a.asyncIterator||"@@asyncIterator",f=a.toStringTag||"@@toStringTag";function l(t,r,e){return Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[r]}try{l({},"")}catch(t){l=function(t,r,e){return t[r]=e}}function s(t,r,e,n){var i=r&&r.prototype instanceof y?r:y,a=Object.create(i.prototype),c=new P(n||[]);return o(a,"_invoke",{value:O(t,e,c)}),a}function h(t,r,e){try{return{type:"normal",arg:t.call(r,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var p={};function y(){}function v(){}function d(){}var g={};l(g,c,(function(){return this}));var m=Object.getPrototypeOf,b=m&&m(m(k([])));b&&b!==r&&e.call(b,c)&&(g=b);var w=d.prototype=y.prototype=Object.create(g);function x(t){["next","throw","return"].forEach((function(r){l(t,r,(function(t){return this._invoke(r,t)}))}))}function L(t,r){function i(o,a,c,u){var f=h(t[o],t,a);if("throw"!==f.type){var l=f.arg,s=l.value;return s&&"object"==n(s)&&e.call(s,"__await")?r.resolve(s.__await).then((function(t){i("next",t,c,u)}),(function(t){i("throw",t,c,u)})):r.resolve(s).then((function(t){l.value=t,c(l)}),(function(t){return i("throw",t,c,u)}))}u(f.arg)}var a;o(this,"_invoke",{value:function(t,e){function n(){return new r((function(r,n){i(t,e,r,n)}))}return a=a?a.then(n,n):n()}})}function O(t,r,e){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(e.method=o,e.arg=i;;){var a=e.delegate;if(a){var c=E(a,e);if(c){if(c===p)continue;return c}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if("suspendedStart"===n)throw n="completed",e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);n="executing";var u=h(t,r,e);if("normal"===u.type){if(n=e.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:e.done}}"throw"===u.type&&(n="completed",e.method="throw",e.arg=u.arg)}}}function E(t,r){var e=r.method,n=t.iterator[e];if(void 0===n)return r.delegate=null,"throw"===e&&t.iterator.return&&(r.method="return",r.arg=void 0,E(t,r),"throw"===r.method)||"return"!==e&&(r.method="throw",r.arg=new TypeError("The iterator does not provide a '"+e+"' method")),p;var o=h(n,t.iterator,r.arg);if("throw"===o.type)return r.method="throw",r.arg=o.arg,r.delegate=null,p;var i=o.arg;return i?i.done?(r[t.resultName]=i.value,r.next=t.nextLoc,"return"!==r.method&&(r.method="next",r.arg=void 0),r.delegate=null,p):i:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,p)}function S(t){var r={tryLoc:t[0]};1 in t&&(r.catchLoc=t[1]),2 in t&&(r.finallyLoc=t[2],r.afterLoc=t[3]),this.tryEntries.push(r)}function j(t){var r=t.completion||{};r.type="normal",delete r.arg,t.completion=r}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(S,this),this.reset(!0)}function k(t){if(t){var r=t[c];if(r)return r.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,o=function r(){for(;++n<t.length;)if(e.call(t,n))return r.value=t[n],r.done=!1,r;return r.value=void 0,r.done=!0,r};return o.next=o}}return{next:_}}function _(){return{value:void 0,done:!0}}return v.prototype=d,o(w,"constructor",{value:d,configurable:!0}),o(d,"constructor",{value:v,configurable:!0}),v.displayName=l(d,f,"GeneratorFunction"),t.isGeneratorFunction=function(t){var r="function"==typeof t&&t.constructor;return!!r&&(r===v||"GeneratorFunction"===(r.displayName||r.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,l(t,f,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},x(L.prototype),l(L.prototype,u,(function(){return this})),t.AsyncIterator=L,t.async=function(r,e,n,o,i){void 0===i&&(i=Promise);var a=new L(s(r,e,n,o),i);return t.isGeneratorFunction(e)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},x(w),l(w,f,"Generator"),l(w,c,(function(){return this})),l(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var r=Object(t),e=[];for(var n in r)e.push(n);return e.reverse(),function t(){for(;e.length;){var n=e.pop();if(n in r)return t.value=n,t.done=!1,t}return t.done=!0,t}},t.values=k,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(j),!t)for(var r in this)"t"===r.charAt(0)&&e.call(this,r)&&!isNaN(+r.slice(1))&&(this[r]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var r=this;function n(e,n){return a.type="throw",a.arg=t,r.next=e,n&&(r.method="next",r.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=e.call(i,"catchLoc"),u=e.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,r){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&e.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=r&&r<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=r,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,r){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&r&&(this.next=r),p},finish:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),j(e),p}},catch:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc===t){var n=e.completion;if("throw"===n.type){var o=n.arg;j(e)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,r,e){return this.delegate={iterator:k(t),resultName:r,nextLoc:e},"next"===this.method&&(this.arg=void 0),p}},t}function a(t,r){(null==r||r>t.length)&&(r=t.length);for(var e=0,n=new Array(r);e<r;e++)n[e]=t[e];return n}function c(t,r){var e=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);r&&(n=n.filter((function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,n)}return e}function u(t){for(var r=1;r<arguments.length;r++){var e=null!=arguments[r]?arguments[r]:{};r%2?c(Object(e),!0).forEach((function(r){f(t,r,e[r])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(e)):c(Object(e)).forEach((function(r){Object.defineProperty(t,r,Object.getOwnPropertyDescriptor(e,r))}))}return t}function f(t,r,e){return(r=function(t){var r=function(t,r){if("object"!==n(t)||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var o=e.call(t,"string");if("object"!==n(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(t);return"symbol"===n(r)?r:String(r)}(r))in t?Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[r]=e,t}function l(t,r){if(null==t)return{};var e,n,o=function(t,r){if(null==t)return{};var e,n,o={},i=Object.keys(t);for(n=0;n<i.length;n++)e=i[n],r.indexOf(e)>=0||(o[e]=t[e]);return o}(t,r);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(t);for(n=0;n<i.length;n++)e=i[n],r.indexOf(e)>=0||Object.prototype.propertyIsEnumerable.call(t,e)&&(o[e]=t[e])}return o}function s(t,r,e,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void e(t)}c.done?r(u):Promise.resolve(u).then(n,o)}function h(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var i=t.apply(r,e);function a(t){s(i,n,o,a,c,"next",t)}function c(t){s(i,n,o,a,c,"throw",t)}a(void 0)}))}}var p=e(187),y=e(549),v=e(106),d=e(185).log,g=e(313),m=e(847),b=e(581),w=b.defaultOptions,x=b.spawnWorker,L=b.terminateWorker,O=b.onMessage,E=b.loadImage,S=b.send,j=0;t.exports=h(i().mark((function t(){var r,e,n,c,f,s,b,P,k,_,T,N,A,G,I,F,R,D,M,C,U,Y,B,z,H,K,W,J,V,Z,Q,q,X,$,tt,rt,et,nt,ot,it,at=arguments;return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r=at.length>0&&void 0!==at[0]?at[0]:"eng",e=at.length>1&&void 0!==at[1]?at[1]:m.LSTM_ONLY,n=at.length>2&&void 0!==at[2]?at[2]:{},c=at.length>3&&void 0!==at[3]?at[3]:{},f=g("Worker",j),s=p(u(u({},w),n)),b=s.logger,P=s.errorHandler,k=l(s,o),_={},T={},N="string"==typeof r?r.split("+"):r,A=e,G=c,I=[m.DEFAULT,m.LSTM_ONLY].includes(e)&&!k.legacyCore,D=new Promise((function(t,r){R=t,F=r})),M=function(t){F(t.message)},(C=x(k)).onerror=M,j+=1,U=function(t,r){_[t]=r},Y=function(t,r){T[t]=r},B=function(t){var r=t.id,e=t.action,n=t.payload;return new Promise((function(t,o){d("[".concat(f,"]: Start ").concat(r,", action=").concat(e));var i="".concat(e,"-").concat(r);U(i,t),Y(i,o),S(C,{workerId:f,jobId:r,action:e,payload:n})}))},z=function(){return console.warn("`load` is depreciated and should be removed from code (workers now come pre-loaded)")},H=function(t){return B(v({id:t,action:"load",payload:{options:{lstmOnly:I,corePath:k.corePath,logging:k.logging}}}))},K=function(t,r,e){return B(v({id:e,action:"FS",payload:{method:"writeFile",args:[t,r]}}))},W=function(t,r){return B(v({id:r,action:"FS",payload:{method:"readFile",args:[t,{encoding:"utf8"}]}}))},J=function(t,r){return B(v({id:r,action:"FS",payload:{method:"unlink",args:[t]}}))},V=function(t,r,e){return B(v({id:e,action:"FS",payload:{method:t,args:r}}))},Z=function(){return console.warn("`loadLanguage` is depreciated and should be removed from code (workers now come with language pre-loaded)")},Q=function(t,r){return B(v({id:r,action:"loadLanguage",payload:{langs:t,options:{langPath:k.langPath,dataPath:k.dataPath,cachePath:k.cachePath,cacheMethod:k.cacheMethod,gzip:k.gzip,lstmOnly:[m.DEFAULT,m.LSTM_ONLY].includes(A)&&!k.legacyLang}}}))},q=function(){return console.warn("`initialize` is depreciated and should be removed from code (workers now come pre-initialized)")},X=function(t,r,e,n){return B(v({id:n,action:"initialize",payload:{langs:t,oem:r,config:e}}))},$=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"eng",r=arguments.length>1?arguments[1]:void 0,e=arguments.length>2?arguments[2]:void 0,n=arguments.length>3?arguments[3]:void 0;if(I&&[m.TESSERACT_ONLY,m.TESSERACT_LSTM_COMBINED].includes(r))throw Error("Legacy model requested but code missing.");var o=r||A;A=o;var i=e||G;G=i;var c,u=("string"==typeof t?t.split("+"):t).filter((function(t){return!N.includes(t)}));return N.push.apply(N,function(t){if(Array.isArray(t))return a(t)}(c=u)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(c)||function(t,r){if(t){if("string"==typeof t)return a(t,r);var e=Object.prototype.toString.call(t).slice(8,-1);return"Object"===e&&t.constructor&&(e=t.constructor.name),"Map"===e||"Set"===e?Array.from(t):"Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e)?a(t,r):void 0}}(c)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()),u.length>0?Q(u,n).then((function(){return X(t,o,i,n)})):X(t,o,i,n)},tt=function(){return B(v({id:arguments.length>1?arguments[1]:void 0,action:"setParameters",payload:{params:arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}}}))},rt=function(){var t=h(i().mark((function t(r){var e,n,o,a=arguments;return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return e=a.length>1&&void 0!==a[1]?a[1]:{},n=a.length>2&&void 0!==a[2]?a[2]:{blocks:!0,text:!0,hocr:!0,tsv:!0},o=a.length>3?a[3]:void 0,t.t0=B,t.t1=v,t.t2=o,t.next=8,E(r);case 8:return t.t3=t.sent,t.t4=e,t.t5=n,t.t6={image:t.t3,options:t.t4,output:t.t5},t.t7={id:t.t2,action:"recognize",payload:t.t6},t.t8=(0,t.t1)(t.t7),t.abrupt("return",(0,t.t0)(t.t8));case 15:case"end":return t.stop()}}),t)})));return function(r){return t.apply(this,arguments)}}(),et=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"Tesseract OCR Result",r=arguments.length>1&&void 0!==arguments[1]&&arguments[1],e=arguments.length>2?arguments[2]:void 0;return console.log("`getPDF` function is depreciated. `recognize` option `savePDF` should be used instead."),B(v({id:e,action:"getPDF",payload:{title:t,textonly:r}}))},nt=function(){var t=h(i().mark((function t(r,e){return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(!I){t.next=2;break}throw Error("`worker.detect` requires Legacy model, which was not loaded.");case 2:return t.t0=B,t.t1=v,t.t2=e,t.next=7,E(r);case 7:return t.t3=t.sent,t.t4={image:t.t3},t.t5={id:t.t2,action:"detect",payload:t.t4},t.t6=(0,t.t1)(t.t5),t.abrupt("return",(0,t.t0)(t.t6));case 12:case"end":return t.stop()}}),t)})));return function(r,e){return t.apply(this,arguments)}}(),ot=function(){var t=h(i().mark((function t(){return i().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return null!==C&&(L(C),C=null),t.abrupt("return",Promise.resolve());case 2:case"end":return t.stop()}}),t)})));return function(){return t.apply(this,arguments)}}(),O(C,(function(t){var r=t.workerId,e=t.jobId,n=t.status,o=t.action,i=t.data,a="".concat(o,"-").concat(e);if("resolve"===n){d("[".concat(r,"]: Complete ").concat(e));var c=i;"recognize"===o?c=y(i):"getPDF"===o&&(c=Array.from(u(u({},i),{},{length:Object.keys(i).length}))),_[a]({jobId:e,data:c})}else if("reject"===n){if(T[a](i),"load"===o&&F(i),!P)throw Error(i);P(i)}else"progress"===n&&b(u(u({},i),{},{userJobId:e}))})),it={id:f,worker:C,setResolve:U,setReject:Y,load:z,writeText:K,readText:W,removeFile:J,FS:V,loadLanguage:Z,initialize:q,reinitialize:$,setParameters:tt,recognize:rt,getPDF:et,detect:nt,terminate:ot},H().then((function(){return Q(r)})).then((function(){return X(r,e,c)})).then((function(){return R(it)})).catch((function(){})),t.abrupt("return",D);case 40:case"end":return t.stop()}}),t)})))},352:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}function o(t,r){var e=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);r&&(n=n.filter((function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,n)}return e}function i(t,r,e){return(r=function(t){var r=function(t,r){if("object"!==n(t)||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var o=e.call(t,"string");if("object"!==n(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(t);return"symbol"===n(r)?r:String(r)}(r))in t?Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[r]=e,t}e(760);var a=e(936),c=e(311),u=e(793),f=e(5),l=e(847),s=e(711),h=e(185).setLogging;t.exports=function(t){for(var r=1;r<arguments.length;r++){var e=null!=arguments[r]?arguments[r]:{};r%2?o(Object(e),!0).forEach((function(r){i(t,r,e[r])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(e)):o(Object(e)).forEach((function(r){Object.defineProperty(t,r,Object.getOwnPropertyDescriptor(e,r))}))}return t}({languages:f,OEM:l,PSM:s,createScheduler:a,createWorker:c,setLogging:h},u)},549:t=>{function r(t){return r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},r(t)}function e(t,r){var e=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);r&&(n=n.filter((function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,n)}return e}function n(t){for(var r=1;r<arguments.length;r++){var n=null!=arguments[r]?arguments[r]:{};r%2?e(Object(n),!0).forEach((function(r){o(t,r,n[r])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):e(Object(n)).forEach((function(r){Object.defineProperty(t,r,Object.getOwnPropertyDescriptor(n,r))}))}return t}function o(t,e,n){return(e=function(t){var e=function(t,e){if("object"!==r(t)||null===t)return t;var n=t[Symbol.toPrimitive];if(void 0!==n){var o=n.call(t,"string");if("object"!==r(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(t);return"symbol"===r(e)?e:String(e)}(e))in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}t.exports=function(t){var r=[],e=[],o=[],i=[],a=[];return t.blocks&&t.blocks.forEach((function(c){c.paragraphs.forEach((function(r){r.lines.forEach((function(e){e.words.forEach((function(o){o.symbols.forEach((function(i){a.push(n(n({},i),{},{page:t,block:c,paragraph:r,line:e,word:o}))})),i.push(n(n({},o),{},{page:t,block:c,paragraph:r,line:e}))})),o.push(n(n({},e),{},{page:t,block:c,paragraph:r}))})),e.push(n(n({},r),{},{page:t,block:c}))})),r.push(n(n({},c),{},{page:t}))})),n(n({},t),{},{blocks:r,paragraphs:e,lines:o,words:i,symbols:a})}},129:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}var o=e(670);t.exports=function(t){var r={};return"undefined"!=typeof WorkerGlobalScope?r.type="webworker":o()?r.type="electron":"object"===("undefined"==typeof document?"undefined":n(document))?r.type="browser":"object"===("undefined"==typeof process?"undefined":n(process))&&(r.type="node"),void 0===t?r:r[t]}},313:t=>{t.exports=function(t,r){return"".concat(t,"-").concat(r,"-").concat(Math.random().toString(16).slice(3,8))}},185:function(t,r){var e=this,n=!1;r.logging=n,r.setLogging=function(t){n=t},r.log=function(){for(var t=arguments.length,r=new Array(t),o=0;o<t;o++)r[o]=arguments[o];return n?console.log.apply(e,r):null}},187:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}function o(t,r){var e=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);r&&(n=n.filter((function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,n)}return e}function i(t,r,e){return(r=function(t){var r=function(t,r){if("object"!==n(t)||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var o=e.call(t,"string");if("object"!==n(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(t);return"symbol"===n(r)?r:String(r)}(r))in t?Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[r]=e,t}var a="browser"===e(129)("type")?function(t){try{return new URL(t,window.location.href).href}catch(e){return t}}:function(t){return t};t.exports=function(t){var r=function(t){for(var r=1;r<arguments.length;r++){var e=null!=arguments[r]?arguments[r]:{};r%2?o(Object(e),!0).forEach((function(r){i(t,r,e[r])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(e)):o(Object(e)).forEach((function(r){Object.defineProperty(t,r,Object.getOwnPropertyDescriptor(e,r))}))}return t}({},t);return["corePath","workerPath","langPath"].forEach((function(e){t[e]&&(r[e]=a(r[e]))})),r}},854:(t,r,e)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}function o(t,r){var e=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);r&&(n=n.filter((function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,n)}return e}function i(t){for(var r=1;r<arguments.length;r++){var e=null!=arguments[r]?arguments[r]:{};r%2?o(Object(e),!0).forEach((function(r){a(t,r,e[r])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(e)):o(Object(e)).forEach((function(r){Object.defineProperty(t,r,Object.getOwnPropertyDescriptor(e,r))}))}return t}function a(t,r,e){return(r=function(t){var r=function(t,r){if("object"!==n(t)||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var o=e.call(t,"string");if("object"!==n(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(t);return"symbol"===n(r)?r:String(r)}(r))in t?Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[r]=e,t}var c=e(147).i8,u=e(341);t.exports=i(i({},u),{},{workerPath:"https://cdn.jsdelivr.net/npm/tesseract.js@v".concat(c,"/dist/worker.min.js")})},581:(t,r,e)=>{var n=e(854),o=e(676),i=e(100),a=e(202),c=e(772),u=e(931);t.exports={defaultOptions:n,spawnWorker:o,terminateWorker:i,onMessage:a,send:c,loadImage:u}},931:t=>{function r(t){return r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},r(t)}function e(){"use strict";e=function(){return t};var t={},n=Object.prototype,o=n.hasOwnProperty,i=Object.defineProperty||function(t,r,e){t[r]=e.value},a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",u=a.asyncIterator||"@@asyncIterator",f=a.toStringTag||"@@toStringTag";function l(t,r,e){return Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[r]}try{l({},"")}catch(t){l=function(t,r,e){return t[r]=e}}function s(t,r,e,n){var o=r&&r.prototype instanceof y?r:y,a=Object.create(o.prototype),c=new P(n||[]);return i(a,"_invoke",{value:O(t,e,c)}),a}function h(t,r,e){try{return{type:"normal",arg:t.call(r,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var p={};function y(){}function v(){}function d(){}var g={};l(g,c,(function(){return this}));var m=Object.getPrototypeOf,b=m&&m(m(k([])));b&&b!==n&&o.call(b,c)&&(g=b);var w=d.prototype=y.prototype=Object.create(g);function x(t){["next","throw","return"].forEach((function(r){l(t,r,(function(t){return this._invoke(r,t)}))}))}function L(t,e){function n(i,a,c,u){var f=h(t[i],t,a);if("throw"!==f.type){var l=f.arg,s=l.value;return s&&"object"==r(s)&&o.call(s,"__await")?e.resolve(s.__await).then((function(t){n("next",t,c,u)}),(function(t){n("throw",t,c,u)})):e.resolve(s).then((function(t){l.value=t,c(l)}),(function(t){return n("throw",t,c,u)}))}u(f.arg)}var a;i(this,"_invoke",{value:function(t,r){function o(){return new e((function(e,o){n(t,r,e,o)}))}return a=a?a.then(o,o):o()}})}function O(t,r,e){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(e.method=o,e.arg=i;;){var a=e.delegate;if(a){var c=E(a,e);if(c){if(c===p)continue;return c}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if("suspendedStart"===n)throw n="completed",e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);n="executing";var u=h(t,r,e);if("normal"===u.type){if(n=e.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:e.done}}"throw"===u.type&&(n="completed",e.method="throw",e.arg=u.arg)}}}function E(t,r){var e=r.method,n=t.iterator[e];if(void 0===n)return r.delegate=null,"throw"===e&&t.iterator.return&&(r.method="return",r.arg=void 0,E(t,r),"throw"===r.method)||"return"!==e&&(r.method="throw",r.arg=new TypeError("The iterator does not provide a '"+e+"' method")),p;var o=h(n,t.iterator,r.arg);if("throw"===o.type)return r.method="throw",r.arg=o.arg,r.delegate=null,p;var i=o.arg;return i?i.done?(r[t.resultName]=i.value,r.next=t.nextLoc,"return"!==r.method&&(r.method="next",r.arg=void 0),r.delegate=null,p):i:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,p)}function S(t){var r={tryLoc:t[0]};1 in t&&(r.catchLoc=t[1]),2 in t&&(r.finallyLoc=t[2],r.afterLoc=t[3]),this.tryEntries.push(r)}function j(t){var r=t.completion||{};r.type="normal",delete r.arg,t.completion=r}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(S,this),this.reset(!0)}function k(t){if(t){var r=t[c];if(r)return r.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var e=-1,n=function r(){for(;++e<t.length;)if(o.call(t,e))return r.value=t[e],r.done=!1,r;return r.value=void 0,r.done=!0,r};return n.next=n}}return{next:_}}function _(){return{value:void 0,done:!0}}return v.prototype=d,i(w,"constructor",{value:d,configurable:!0}),i(d,"constructor",{value:v,configurable:!0}),v.displayName=l(d,f,"GeneratorFunction"),t.isGeneratorFunction=function(t){var r="function"==typeof t&&t.constructor;return!!r&&(r===v||"GeneratorFunction"===(r.displayName||r.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,l(t,f,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},x(L.prototype),l(L.prototype,u,(function(){return this})),t.AsyncIterator=L,t.async=function(r,e,n,o,i){void 0===i&&(i=Promise);var a=new L(s(r,e,n,o),i);return t.isGeneratorFunction(e)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},x(w),l(w,f,"Generator"),l(w,c,(function(){return this})),l(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var r=Object(t),e=[];for(var n in r)e.push(n);return e.reverse(),function t(){for(;e.length;){var n=e.pop();if(n in r)return t.value=n,t.done=!1,t}return t.done=!0,t}},t.values=k,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(j),!t)for(var r in this)"t"===r.charAt(0)&&o.call(this,r)&&!isNaN(+r.slice(1))&&(this[r]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var r=this;function e(e,n){return a.type="throw",a.arg=t,r.next=e,n&&(r.method="next",r.arg=void 0),!!n}for(var n=this.tryEntries.length-1;n>=0;--n){var i=this.tryEntries[n],a=i.completion;if("root"===i.tryLoc)return e("end");if(i.tryLoc<=this.prev){var c=o.call(i,"catchLoc"),u=o.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return e(i.catchLoc,!0);if(this.prev<i.finallyLoc)return e(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return e(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return e(i.finallyLoc)}}}},abrupt:function(t,r){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc<=this.prev&&o.call(n,"finallyLoc")&&this.prev<n.finallyLoc){var i=n;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=r&&r<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=r,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,r){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&r&&(this.next=r),p},finish:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),j(e),p}},catch:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc===t){var n=e.completion;if("throw"===n.type){var o=n.arg;j(e)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,r,e){return this.delegate={iterator:k(t),resultName:r,nextLoc:e},"next"===this.method&&(this.arg=void 0),p}},t}function n(t,r,e,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void e(t)}c.done?r(u):Promise.resolve(u).then(n,o)}function o(t){return function(){var r=this,e=arguments;return new Promise((function(o,i){var a=t.apply(r,e);function c(t){n(a,o,i,c,u,"next",t)}function u(t){n(a,o,i,c,u,"throw",t)}c(void 0)}))}}var i=function(t){return new Promise((function(r,e){var n=new FileReader;n.onload=function(){r(n.result)},n.onerror=function(t){var r=t.target.error.code;e(Error("File could not be read! Code=".concat(r)))},n.readAsArrayBuffer(t)}))},a=function(){var t=o(e().mark((function t(r){var n,c,u;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(n=r,void 0!==r){t.next=3;break}return t.abrupt("return","undefined");case 3:if("string"!=typeof r){t.next=16;break}if(!/data:image\/([a-zA-Z]*);base64,([^"]*)/.test(r)){t.next=8;break}n=atob(r.split(",")[1]).split("").map((function(t){return t.charCodeAt(0)})),t.next=14;break;case 8:return t.next=10,fetch(r);case 10:return c=t.sent,t.next=13,c.arrayBuffer();case 13:n=t.sent;case 14:t.next=43;break;case 16:if(!("undefined"!=typeof HTMLElement&&r instanceof HTMLElement)){t.next=30;break}if("IMG"!==r.tagName){t.next=21;break}return t.next=20,a(r.src);case 20:n=t.sent;case 21:if("VIDEO"!==r.tagName){t.next=25;break}return t.next=24,a(r.poster);case 24:n=t.sent;case 25:if("CANVAS"!==r.tagName){t.next=28;break}return t.next=28,new Promise((function(t){r.toBlob(function(){var r=o(e().mark((function r(o){return e().wrap((function(r){for(;;)switch(r.prev=r.next){case 0:return r.next=2,i(o);case 2:n=r.sent,t();case 4:case"end":return r.stop()}}),r)})));return function(t){return r.apply(this,arguments)}}())}));case 28:t.next=43;break;case 30:if(!("undefined"!=typeof OffscreenCanvas&&r instanceof OffscreenCanvas)){t.next=39;break}return t.next=33,r.convertToBlob();case 33:return u=t.sent,t.next=36,i(u);case 36:n=t.sent,t.next=43;break;case 39:if(!(r instanceof File||r instanceof Blob)){t.next=43;break}return t.next=42,i(r);case 42:n=t.sent;case 43:return t.abrupt("return",new Uint8Array(n));case 44:case"end":return t.stop()}}),t)})));return function(r){return t.apply(this,arguments)}}();t.exports=a},202:t=>{t.exports=function(t,r){t.onmessage=function(t){var e=t.data;r(e)}}},772:t=>{function r(t){return r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},r(t)}function e(){"use strict";e=function(){return t};var t={},n=Object.prototype,o=n.hasOwnProperty,i=Object.defineProperty||function(t,r,e){t[r]=e.value},a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",u=a.asyncIterator||"@@asyncIterator",f=a.toStringTag||"@@toStringTag";function l(t,r,e){return Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[r]}try{l({},"")}catch(t){l=function(t,r,e){return t[r]=e}}function s(t,r,e,n){var o=r&&r.prototype instanceof y?r:y,a=Object.create(o.prototype),c=new P(n||[]);return i(a,"_invoke",{value:O(t,e,c)}),a}function h(t,r,e){try{return{type:"normal",arg:t.call(r,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var p={};function y(){}function v(){}function d(){}var g={};l(g,c,(function(){return this}));var m=Object.getPrototypeOf,b=m&&m(m(k([])));b&&b!==n&&o.call(b,c)&&(g=b);var w=d.prototype=y.prototype=Object.create(g);function x(t){["next","throw","return"].forEach((function(r){l(t,r,(function(t){return this._invoke(r,t)}))}))}function L(t,e){function n(i,a,c,u){var f=h(t[i],t,a);if("throw"!==f.type){var l=f.arg,s=l.value;return s&&"object"==r(s)&&o.call(s,"__await")?e.resolve(s.__await).then((function(t){n("next",t,c,u)}),(function(t){n("throw",t,c,u)})):e.resolve(s).then((function(t){l.value=t,c(l)}),(function(t){return n("throw",t,c,u)}))}u(f.arg)}var a;i(this,"_invoke",{value:function(t,r){function o(){return new e((function(e,o){n(t,r,e,o)}))}return a=a?a.then(o,o):o()}})}function O(t,r,e){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(e.method=o,e.arg=i;;){var a=e.delegate;if(a){var c=E(a,e);if(c){if(c===p)continue;return c}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if("suspendedStart"===n)throw n="completed",e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);n="executing";var u=h(t,r,e);if("normal"===u.type){if(n=e.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:e.done}}"throw"===u.type&&(n="completed",e.method="throw",e.arg=u.arg)}}}function E(t,r){var e=r.method,n=t.iterator[e];if(void 0===n)return r.delegate=null,"throw"===e&&t.iterator.return&&(r.method="return",r.arg=void 0,E(t,r),"throw"===r.method)||"return"!==e&&(r.method="throw",r.arg=new TypeError("The iterator does not provide a '"+e+"' method")),p;var o=h(n,t.iterator,r.arg);if("throw"===o.type)return r.method="throw",r.arg=o.arg,r.delegate=null,p;var i=o.arg;return i?i.done?(r[t.resultName]=i.value,r.next=t.nextLoc,"return"!==r.method&&(r.method="next",r.arg=void 0),r.delegate=null,p):i:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,p)}function S(t){var r={tryLoc:t[0]};1 in t&&(r.catchLoc=t[1]),2 in t&&(r.finallyLoc=t[2],r.afterLoc=t[3]),this.tryEntries.push(r)}function j(t){var r=t.completion||{};r.type="normal",delete r.arg,t.completion=r}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(S,this),this.reset(!0)}function k(t){if(t){var r=t[c];if(r)return r.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var e=-1,n=function r(){for(;++e<t.length;)if(o.call(t,e))return r.value=t[e],r.done=!1,r;return r.value=void 0,r.done=!0,r};return n.next=n}}return{next:_}}function _(){return{value:void 0,done:!0}}return v.prototype=d,i(w,"constructor",{value:d,configurable:!0}),i(d,"constructor",{value:v,configurable:!0}),v.displayName=l(d,f,"GeneratorFunction"),t.isGeneratorFunction=function(t){var r="function"==typeof t&&t.constructor;return!!r&&(r===v||"GeneratorFunction"===(r.displayName||r.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,l(t,f,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},x(L.prototype),l(L.prototype,u,(function(){return this})),t.AsyncIterator=L,t.async=function(r,e,n,o,i){void 0===i&&(i=Promise);var a=new L(s(r,e,n,o),i);return t.isGeneratorFunction(e)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},x(w),l(w,f,"Generator"),l(w,c,(function(){return this})),l(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var r=Object(t),e=[];for(var n in r)e.push(n);return e.reverse(),function t(){for(;e.length;){var n=e.pop();if(n in r)return t.value=n,t.done=!1,t}return t.done=!0,t}},t.values=k,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(j),!t)for(var r in this)"t"===r.charAt(0)&&o.call(this,r)&&!isNaN(+r.slice(1))&&(this[r]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var r=this;function e(e,n){return a.type="throw",a.arg=t,r.next=e,n&&(r.method="next",r.arg=void 0),!!n}for(var n=this.tryEntries.length-1;n>=0;--n){var i=this.tryEntries[n],a=i.completion;if("root"===i.tryLoc)return e("end");if(i.tryLoc<=this.prev){var c=o.call(i,"catchLoc"),u=o.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return e(i.catchLoc,!0);if(this.prev<i.finallyLoc)return e(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return e(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return e(i.finallyLoc)}}}},abrupt:function(t,r){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc<=this.prev&&o.call(n,"finallyLoc")&&this.prev<n.finallyLoc){var i=n;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=r&&r<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=r,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,r){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&r&&(this.next=r),p},finish:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),j(e),p}},catch:function(t){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc===t){var n=e.completion;if("throw"===n.type){var o=n.arg;j(e)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,r,e){return this.delegate={iterator:k(t),resultName:r,nextLoc:e},"next"===this.method&&(this.arg=void 0),p}},t}function n(t,r,e,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void e(t)}c.done?r(u):Promise.resolve(u).then(n,o)}t.exports=function(){var t,r=(t=e().mark((function t(r,n){return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:r.postMessage(n);case 1:case"end":return t.stop()}}),t)})),function(){var r=this,e=arguments;return new Promise((function(o,i){var a=t.apply(r,e);function c(t){n(a,o,i,c,u,"next",t)}function u(t){n(a,o,i,c,u,"throw",t)}c(void 0)}))});return function(t,e){return r.apply(this,arguments)}}()},676:t=>{t.exports=function(t){var r,e=t.workerPath,n=t.workerBlobURL;if(Blob&&URL&&n){var o=new Blob(['importScripts("'.concat(e,'");')],{type:"application/javascript"});r=new Worker(URL.createObjectURL(o))}else r=new Worker(e);return r}},100:t=>{t.exports=function(t){t.terminate()}},147:t=>{"use strict";t.exports={i8:"5.1.1"}}},r={};function e(n){var o=r[n];if(void 0!==o)return o.exports;var i=r[n]={id:n,loaded:!1,exports:{}};return t[n].call(i.exports,i,i.exports,e),i.loaded=!0,i.exports}return e.nmd=t=>(t.paths=[],t.children||(t.children=[]),t),e(352)})()));
+//# sourceMappingURL=tesseract.min.js.map</script>
+<script>window.TESS_OPTS={workerPath:"ocr-worker.js",langPath:'https://embedded.tessdata',corePath:'https://embedded.tessdata/core.js',cacheMethod:'none',gzip:true,workerBlobURL:false};</script>
+<style>
+  :root{
+    --ink:#1d1f24; --muted:#6b7080; --line:#e3e1dc; --paper:#f5f3ef; --panel:#ffffff;
+    --accent:#2f5bea; --accent-soft:rgba(47,91,234,.10); --edit:#e8590c;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:var(--paper);display:flex;flex-direction:column;font-size:14px}
+  button,select,input{font:inherit;color:inherit}
+
+  /* ── 상단 도구막대 ── */
+  header{display:flex;align-items:center;gap:6px;padding:8px 12px;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap}
+  header h1{font-size:15px;font-weight:700;margin:0 10px 0 2px;white-space:nowrap}
+  .sep{width:1px;height:24px;background:var(--line);margin:0 4px}
+  .btn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;white-space:nowrap;line-height:1.2}
+  .btn:hover{border-color:#c9c6bf;background:#faf9f7}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{filter:brightness(1.07)}
+  .btn.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  select.sel{border:1px solid var(--line);border-radius:7px;padding:6px 6px;background:#fff}
+  .zoomv{min-width:46px;text-align:center;color:var(--muted);font-variant-numeric:tabular-nums}
+  .spacer{flex:1}
+
+  main{flex:1;display:flex;min-height:0}
+
+  /* ── 작업 영역 ── */
+  #viewport{flex:1;overflow:auto;position:relative;
+    background-color:#ebe8e2;
+    background-image:radial-gradient(#d6d2ca 1px,transparent 1px);background-size:18px 18px}
+  #sizer{position:relative;margin:24px auto}
+  #stage{position:absolute;left:0;top:0;transform-origin:0 0;box-shadow:0 2px 14px rgba(0,0,0,.14);background:#fff}
+  #base{display:block;user-select:none;pointer-events:none;-webkit-user-drag:none}
+  #layer{position:absolute;inset:0}
+  #cellLayer{position:absolute;inset:0;pointer-events:none;display:none}
+  body.struct #cellLayer{display:block}
+  .cellbox{position:absolute;outline:1px dashed rgba(18,140,80,.35);outline-offset:-1px}
+  .chk{display:inline-flex;align-items:center;gap:5px;font-size:13px;padding:0 4px;cursor:pointer;white-space:nowrap}
+  body.struct .box.cellitem{box-shadow:inset 0 0 0 1px rgba(18,140,80,.45)}
+  body.struct .box.cellitem::after{background:#128c50}
+  body.tool-text #layer, body.tool-cover #layer{cursor:crosshair}
+  #draft{position:absolute;border:1.5px dashed var(--accent);background:var(--accent-soft);pointer-events:none;display:none}
+  body.hide-edits #layer{visibility:hidden}
+
+  #empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px}
+  .drop{border:2px dashed #bdb8ae;border-radius:16px;background:rgba(255,255,255,.7);padding:44px 40px;text-align:center;max-width:520px;cursor:pointer}
+  .drop.over{border-color:var(--accent);background:#fff}
+  .drop b{display:block;font-size:18px;margin-bottom:8px}
+  .drop p{margin:4px 0;color:var(--muted);line-height:1.6}
+  .drop kbd{border:1px solid #ccc;border-bottom-width:2px;border-radius:4px;padding:0 5px;font-size:12px;background:#fff}
+
+  /* ── 글자 상자 ── */
+  .box{position:absolute;cursor:pointer;touch-action:none}
+  .box .txt{width:100%;height:100%;outline:none;white-space:pre;overflow:visible;padding:0;margin:0;cursor:inherit;box-sizing:border-box}
+  .box:not(.edited):not(.editing){background:transparent !important}
+  .box:not(.edited):not(.editing) .txt{color:transparent !important}
+  .box:hover{box-shadow:inset 0 0 0 1px rgba(47,91,234,.6)}
+  .box.editing{cursor:text;z-index:5}
+  .box.editing .txt{cursor:text}
+  .box.sel{box-shadow:0 0 0 2px var(--accent) !important;z-index:4}
+  .box canvas.gl{position:absolute;pointer-events:none}
+  /* 선명한 화면 캡처는 확대할 때 원본·바꾼 글자 모두 픽셀 그대로 */
+  body.crisp #base, body.crisp .box canvas.gl{image-rendering:pixelated}
+  .box.glyph .txt{color:transparent !important}
+  .box .handle{position:absolute;right:-6px;bottom:-6px;width:11px;height:11px;border-radius:3px;background:#fff;border:2px solid var(--accent);cursor:nwse-resize;display:none}
+  .box.sel:not(.editing) .handle{display:block}
+
+  /* 구조(도식) 보기 */
+  body.struct .box{box-shadow:inset 0 0 0 1px rgba(47,91,234,.4)}
+  body.struct .box.edited{box-shadow:inset 0 0 0 1px rgba(232,89,12,.7)}
+  body.struct .box:not(:hover):not(.sel)::after{display:none}
+  body.struct .box::after{content:attr(data-n);position:absolute;left:-1px;top:0;transform:translateY(-100%);
+    font:700 10px/1 'Noto Sans KR',sans-serif;color:#fff;background:var(--accent);padding:2px 4px;border-radius:3px 3px 3px 0;pointer-events:none;white-space:nowrap}
+  body.struct .box.edited::after{background:var(--edit)}
+
+  /* ── 오른쪽 패널 ── */
+  aside{width:340px;background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+  .sec{padding:14px 14px 12px;border-bottom:1px solid var(--line)}
+  .sec h2{font-size:12px;letter-spacing:.04em;color:var(--muted);margin:0 0 10px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+  .props{display:grid;grid-template-columns:72px 1fr;gap:8px 10px;align-items:center}
+  .props label{color:var(--muted);font-size:13px}
+  .props input[type=number]{width:58px;border:1px solid var(--line);border-radius:6px;padding:4px 6px}
+  .props input[type=color]{width:44px;height:28px;border:1px solid var(--line);border-radius:6px;padding:2px;background:#fff;cursor:pointer}
+  .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+  .seg button{border:0;background:#fff;padding:4px 10px;cursor:pointer;border-right:1px solid var(--line)}
+  .seg button:last-child{border-right:0}
+  .seg button.on{background:var(--accent-soft);color:var(--accent);font-weight:700}
+  .props .full{grid-column:1/-1}
+  .noselect{color:var(--muted);font-size:13px;line-height:1.6}
+  .btn.sm{padding:4px 9px;font-size:13px}
+  .btn.danger{color:#c92a2a}
+
+  #list{flex:1;overflow:auto;padding:8px 10px 20px}
+  .item{display:flex;gap:8px;padding:6px 6px;border-radius:8px;align-items:flex-start}
+  .item:hover{background:#f7f6f3}
+  .item.sel{background:var(--accent-soft)}
+  .item .n{flex:none;min-width:24px;height:20px;margin-top:5px;border-radius:5px;background:#eceae5;color:var(--muted);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 4px}
+  .item.edited .n{background:var(--edit);color:#fff}
+  .item textarea{flex:1;border:1px solid transparent;background:transparent;border-radius:6px;padding:4px 6px;resize:none;font:inherit;line-height:1.5;min-height:30px;overflow:hidden}
+  .item textarea:focus{outline:none;border-color:var(--accent);background:#fff}
+  .item .orig{font-size:11px;color:var(--muted);padding:0 6px 2px;text-decoration:line-through;white-space:pre-wrap}
+  .listempty{color:var(--muted);text-align:center;padding:30px 12px;line-height:1.7}
+
+  /* 진행 표시 */
+  #progress{position:fixed;inset:0;background:rgba(29,31,36,.38);display:none;align-items:center;justify-content:center;z-index:50}
+  #progress .card{background:#fff;border-radius:14px;padding:22px 26px;width:340px;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+  #progress .t{font-weight:700;margin-bottom:4px}
+  #progress .s{color:var(--muted);font-size:13px;margin-bottom:12px}
+  .bar{height:7px;background:#eee;border-radius:9px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+  #out{position:fixed;inset:0;background:rgba(29,31,36,.45);display:none;align-items:center;justify-content:center;z-index:55;padding:20px}
+  #out .card{background:#fff;border-radius:14px;padding:18px;max-width:min(900px,96vw);width:100%;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+  #toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:#1d1f24;color:#fff;padding:9px 16px;border-radius:9px;opacity:0;transition:.2s;pointer-events:none;z-index:60;font-size:13px}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media (max-width:860px){ main{flex-direction:column} aside{width:auto;height:42vh;border-left:0;border-top:1px solid var(--line)} }
+</style>
+</head>
+<body>
+<header>
+  <h1>📄 문서 이미지 글자 편집기</h1>
+  <button class="btn" id="btnOpen">이미지 열기</button>
+  <input type="file" id="file" accept="image/*,.jpg,.jpeg,.jfif,.png,.webp,.bmp,.gif" hidden>
+  <div class="sep"></div>
+  <select class="sel" id="lang" title="인식 언어">
+    <option value="kor+eng">한국어+영어</option>
+    <option value="kor">한국어</option>
+    <option value="eng">영어</option>
+  </select>
+  <select class="sel" id="unit" title="나누는 단위">
+    <option value="line">줄 단위</option>
+    <option value="word">단어 단위</option>
+    <option value="para">문단 단위</option>
+  </select>
+  <label class="chk" title="표의 선을 찾아 칸마다 따로 인식"><input type="checkbox" id="tableMode" checked> 표 칸 나눠 인식</label>
+  <label class="chk" title="원본과 가장 비슷한 글꼴을 자동으로 고름"><input type="checkbox" id="autoFont" checked> 글꼴 자동</label>
+  <label class="chk" title="문서에 있던 글자 모양을 잘라서 그대로 사용 (가장 똑같이 보임)"><input type="checkbox" id="glyphMode" checked> 원본 글자모양 사용</label>
+  <button class="btn primary" id="btnOcr" disabled>글자 인식</button>
+  <div class="sep"></div>
+  <button class="btn" id="toolText" disabled title="드래그하거나 클릭해서 새 글자 상자 추가">＋ 글자 추가</button>
+  <button class="btn" id="toolCover" disabled title="드래그한 영역을 배경색으로 덮어 지우기">▭ 영역 지우기</button>
+  <button class="btn" id="btnStruct" title="인식된 영역을 번호와 함께 표시">구조 보기</button>
+  <button class="btn" id="btnCompare" disabled title="누르고 있는 동안 원본 표시">원본 비교</button>
+  <div class="sep"></div>
+  <button class="btn" id="zOut">−</button><span class="zoomv" id="zVal">100%</span><button class="btn" id="zIn">＋</button>
+  <button class="btn" id="zFit">맞춤</button>
+  <div class="spacer"></div>
+  <button class="btn" id="btnCopy" disabled>전체 텍스트 복사</button>
+  <button class="btn primary" id="btnExportJpg" disabled>JPG 저장</button>
+  <button class="btn" id="btnExport" disabled>PNG 저장</button>
+</header>
+
+<main>
+  <section id="viewport">
+    <div id="empty">
+      <div class="drop" id="drop">
+        <b>캡처한 문서 이미지를 올려주세요</b>
+        <p style="font-weight:700;color:var(--ink)">JPG · PNG · WEBP · BMP 지원</p>
+        <p>여기로 끌어다 놓거나, 클릭해서 파일을 고르거나,<br><kbd>Ctrl</kbd>+<kbd>V</kbd>로 캡처 화면을 바로 붙여넣으세요.</p>
+        <p style="font-size:12px;margin-top:12px">이미지는 브라우저 안에서만 처리되고 어디에도 업로드되지 않습니다.</p>
+      </div>
+    </div>
+    <div id="sizer" hidden>
+      <div id="stage">
+        <img id="base" alt="">
+        <div id="cellLayer"></div>
+        <div id="layer"></div>
+        <div id="draft"></div>
+      </div>
+    </div>
+  </section>
+
+  <aside>
+    <div class="sec">
+      <h2>선택한 글자 상자</h2>
+      <div id="noSel" class="noselect">이미지 위 상자를 <b>클릭</b>하면 선택, <b>더블클릭</b>하면 글자를 바로 고칠 수 있어요. 선택한 상자는 끌어서 옮기고 오른쪽 아래 모서리로 크기를 바꿉니다.</div>
+      <div id="props" class="props" hidden>
+        <label>글자 크기</label>
+        <div class="row"><input type="number" id="pSize" min="4" max="400" step="0.5"> <span class="noselect">px</span>
+          <span style="width:8px"></span><label style="margin:0">줄 간격</label><input type="number" id="pLine" min="4" max="600" step="0.5"></div>
+        <label>글자색</label>
+        <div class="row"><input type="color" id="pColor"><label style="margin:0 0 0 10px">배경색</label><input type="color" id="pBg"></div>
+        <label>모양</label>
+        <div class="row">
+          <div class="seg"><button id="pBold"><b>B</b></button></div>
+          <div class="seg" id="pAlign"><button data-a="left">왼쪽</button><button data-a="center">가운데</button><button data-a="right">오른쪽</button></div>
+        </div>
+        <label>글꼴</label>
+        <select class="sel" id="pFont"></select>
+        <div class="full row" style="margin-top:4px">
+          <button class="btn sm" id="pEdit">글자 고치기</button>
+          <button class="btn sm" id="pResample" title="상자 주변에서 배경색/글자색을 다시 추출">색 다시 추출</button>
+          <button class="btn sm" id="pReset">원래대로</button>
+          <button class="btn sm danger" id="pDel">삭제</button>
+        </div>
+      </div>
+    </div>
+    <div class="sec" style="padding-bottom:8px">
+      <h2><span>문서 구조 · 텍스트 목록 <span id="cnt"></span></span>
+        <select class="sel" id="gFont" title="모든 상자 글꼴" style="font-size:12px;padding:3px 4px"></select></h2>
+    </div>
+    <div id="list"><div class="listempty">이미지를 열면 글자를 자동으로 인식해서<br>여기에 영역별로 나열합니다.</div></div>
+  </aside>
+</main>
+
+<div id="progress"><div class="card"><div class="t" id="pgT">글자 인식 중</div><div class="s" id="pgS">준비 중…</div><div class="bar"><i id="pgB"></i></div></div></div>
+<div id="out" onclick="if(event.target===this)this.style.display='none'">
+  <div class="card">
+    <div class="row" style="justify-content:space-between;margin-bottom:10px"><b>저장할 이미지</b><button class="btn sm" onclick="document.getElementById('out').style.display='none'">닫기</button></div>
+    <p class="noselect" style="margin:0 0 10px">다운로드가 자동으로 시작되지 않으면 아래 링크를 누르거나, 이미지를 <b>마우스 오른쪽 클릭 → 이미지를 다른 이름으로 저장</b>(휴대폰은 길게 누르기) 하세요.</p>
+    <a id="outLink" class="btn primary" style="display:inline-block;text-decoration:none;margin-bottom:10px"></a>
+    <div style="overflow:auto;max-height:62vh;border:1px solid var(--line);border-radius:8px"><img id="outImg" style="display:block;max-width:100%"></div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const FONTS = [
+    ['PIXEL9', '굴림 9pt 비트맵 (캡처 글씨 그대로)'],
+    ["'Malgun Gothic', sans-serif", "맑은 고딕"],
+    ["Gulim, sans-serif", "굴림"],
+    ["Dotum, sans-serif", "돋움"],
+    ["Batang, serif", "바탕"],
+    ["'Apple SD Gothic Neo', sans-serif", "애플 SD 산돌고딕"],
+    ["'Noto Sans KR', sans-serif", "본고딕 (Noto Sans KR)"],
+    ["'Nanum Gothic', sans-serif", "나눔고딕"],
+    ["'Nanum Myeongjo', serif", "나눔명조"],
+    ["Arial, Helvetica, sans-serif", "Arial"],
+    ["'Times New Roman', serif", "Times New Roman"],
+  ];
+  let defaultFont = "'Noto Sans KR', sans-serif";
+
+  // 상태
+  let img = null, natW = 0, natH = 0, zoom = 1;
+  let items = [], selId = null, nextId = 1, tool = 'select', fileName = 'document';
+  const els = new Map();
+  const src = document.createElement('canvas');
+  const sctx = src.getContext('2d', { willReadFrequently: true });
+
+  const viewport = $('#viewport'), sizer = $('#sizer'), stage = $('#stage'),
+        base = $('#base'), layer = $('#layer'), draft = $('#draft'), list = $('#list');
+
+  // 글꼴 선택지
+  setTimeout(() => { $('#gFont').value = defaultFont; }, 0);
+  for (const sel of [$('#pFont'), $('#gFont')]) {
+    FONTS.forEach(([v, n]) => { const o = document.createElement('option'); o.value = v; o.textContent = n; sel.append(o); });
+  }
+
+  // ───────── 이미지 불러오기 ─────────
+  $('#btnOpen').onclick = () => $('#file').click();
+  $('#drop').onclick = () => $('#file').click();
+  $('#file').onchange = e => { const f = e.target.files[0]; if (f) loadFile(f); e.target.value = ''; };
+  ['dragenter', 'dragover'].forEach(t => viewport.addEventListener(t, e => { e.preventDefault(); $('#drop').classList.add('over'); }));
+  ['dragleave', 'drop'].forEach(t => viewport.addEventListener(t, e => { e.preventDefault(); $('#drop').classList.remove('over'); }));
+  viewport.addEventListener('drop', e => { const f = [...e.dataTransfer.files].find(isImage); if (f) loadFile(f); });
+  window.addEventListener('paste', e => {
+    if (isTyping()) return;
+    const f = [...(e.clipboardData?.files || [])].find(isImage)
+      || [...(e.clipboardData?.items || [])].find(i => i.type.startsWith('image/'))?.getAsFile();
+    if (f) { e.preventDefault(); loadFile(f, f.name && f.name !== 'image.png' ? f.name : '붙여넣은 이미지'); }
+  });
+
+  function isImage(f) {
+    return !!f && ((f.type || '').startsWith('image/') || /\.(jpe?g|jfif|pjpeg|pjp|png|webp|bmp|gif)$/i.test(f.name || ''));
+  }
+  function loadFile(f, name) {
+    if (!isImage(f)) { toast('이미지 파일(JPG, PNG 등)만 열 수 있습니다.'); return; }
+    fileName = (name || f.name || 'document').replace(/\.[^.]+$/, '');
+    const im = new Image();
+    im.onload = () => {
+      img = im; natW = im.naturalWidth; natH = im.naturalHeight;
+      src.width = natW; src.height = natH; sctx.drawImage(im, 0, 0);
+      base.src = url; base.width = natW; base.height = natH;
+      stage.style.width = natW + 'px'; stage.style.height = natH + 'px';
+      items = []; selId = null; layer.innerHTML = ''; els.clear(); cells = []; $('#cellLayer').innerHTML = '';
+      $('#empty').hidden = true; sizer.hidden = false;
+      ['#btnOcr', '#toolText', '#toolCover', '#btnCompare', '#btnExport', '#btnExportJpg', '#btnCopy'].forEach(s => $(s).disabled = false);
+      fit(); renderAll();
+      runOCR();
+    };
+    im.onerror = () => toast(/\.(heic|heif)$/i.test(f.name || '')
+      ? 'HEIC 사진은 브라우저에서 열 수 없습니다. JPG로 변환해서 올려주세요.'
+      : '이미지를 열 수 없습니다. JPG/PNG 파일인지 확인해주세요.');
+    const rd = new FileReader();
+    rd.onload = () => { url = rd.result; im.src = url; };
+    rd.onerror = () => toast('파일을 읽을 수 없습니다.');
+    let url; rd.readAsDataURL(f);
+  }
+
+  // ───────── 글자 인식 (Tesseract.js) ─────────
+  $('#btnOcr').onclick = () => runOCR();
+  const STATUS = {
+    'loading tesseract core': '인식 엔진 불러오는 중', 'initializing tesseract': '엔진 초기화 중',
+    'initialized tesseract': '엔진 준비 완료', 'loading language traineddata': '언어 데이터 불러오는 중',
+    'loaded language traineddata': '언어 데이터 준비 완료', 'initializing api': '준비 중', 'initialized api': '준비 완료',
+    'recognizing text': '표 밖 글자 인식 중'
+  };
+  let cells = [], CRISP = false;
+  // 안티앨리어싱 없는 선명한 화면 캡처인지 (중간 밝기 픽셀 비율로 판단)
+  function isCrisp() {
+    const W = natW, H = natH, d = sctx.getImageData(0, 0, W, H).data;
+    const step = Math.max(1, Math.floor(Math.sqrt(W * H / 300000)));
+    let ink = 0, mid = 0;
+    for (let y = 1; y < H - 1; y += step) for (let x = 1; x < W - 1; x += step) {
+      const L = i => d[i * 4] * 0.299 + d[i * 4 + 1] * 0.587 + d[i * 4 + 2] * 0.114;
+      const i = y * W + x, v = L(i), nb = [L(i - 1), L(i + 1), L(i - W), L(i + W)];
+      const lo = Math.min(v, ...nb), hi = Math.max(v, ...nb);
+      if (hi - lo < 40) continue;
+      ink++;
+      if (v - lo > 20 && hi - v > 20) mid++;
+    }
+    return ink > 50 && mid / ink < 0.08;
+  }
+  const tick = () => new Promise(r => setTimeout(r, 0));
+
+  async function runOCR() {
+    if (!img) return;
+    if (!window.Tesseract) { toast('인식 엔진을 불러오지 못했습니다. (수동으로 글자 추가는 가능합니다)'); return; }
+    const prog = $('#progress'); prog.style.display = 'flex';
+    let quiet = false;
+    let lastP = Date.now();
+    const setP = (s, p) => { lastP = Date.now(); $('#pgS').textContent = STATUS[s] || s; $('#pgB').style.width = Math.round((p || 0) * 100) + '%'; };
+    const watch = setInterval(() => { if (Date.now() - lastP > 45000) { $('#pgS').textContent += ' — 오래 걸리고 있어요. 이 화면을 캡처해 알려주세요.'; lastP = Date.now() + 1e9; } }, 5000);
+    setP('initializing api', 0);
+    const workers = [];
+    try {
+      const langs = $('#lang').value.split('+');
+      const nW = (navigator.hardwareConcurrency || 2) >= 4 ? 2 : 1;
+      for (let i = 0; i < nW; i++)
+        workers.push(await Tesseract.createWorker(langs, 1, { ...(window.TESS_OPTS || {}),
+          logger: m => { if (!quiet && m.status && (i === 0)) setP(m.status, m.progress); } }));
+      for (const w of workers) await w.setParameters({ user_defined_dpi: '300' });
+
+      // 1) 표 칸 찾기
+      cells = []; CRISP = isCrisp(); document.body.classList.toggle('crisp', CRISP);
+      if ($('#tableMode').checked) { setP('표 구조 찾는 중', 0.05); await tick(); cells = detectCells(); }
+      renderCells();
+
+      // 2) 표 밖 글자: 표 칸을 지운 이미지를 확대해서 인식
+      const result = [];
+      setP('recognizing text', 0.1);
+      const th = estimateTextH(cells);
+      let gs = Math.max(0.5, Math.min(3, 34 / th, 5200 / Math.max(natW, natH)));
+      const g = document.createElement('canvas'); g.width = Math.round(natW * gs); g.height = Math.round(natH * gs);
+      const gx = g.getContext('2d'); gx.imageSmoothingQuality = 'high'; gx.imageSmoothingEnabled = true;
+      gx.drawImage(src, 0, 0, g.width, g.height);
+      for (const c of cells) { gx.fillStyle = c.bg; gx.fillRect((c.x - 4) * gs, (c.y - 4) * gs, (c.w + 8) * gs, (c.h + 8) * gs); }
+      if (cells.length) for (const t of tableBoxes(cells)) { gx.fillStyle = t.bg; gx.fillRect((t.x - 3) * gs, (t.y - 3) * gs, (t.w + 6) * gs, (t.h + 6) * gs); }
+      await workers[0].setParameters({ tessedit_pageseg_mode: '6', tessedit_char_whitelist: '' });
+      const { data } = await workers[0].recognize(g);
+      const unit = $('#unit').value;
+      const key = unit === 'word' ? 'words' : unit === 'para' ? 'paragraphs' : 'lines';
+      for (const u of collect(data, key)) {
+        const text = cleanText(u.text);
+        if (!text || (u.confidence != null && u.confidence < 20) || !/[가-힣A-Za-z0-9]/.test(text)) continue;
+        if (key === 'lines' && u.words && u.words.length > 1) {
+          const segs = splitByGap(u.words.map(w => ({ t: w.text, x0: w.bbox.x0 / gs, y0: w.bbox.y0 / gs, x1: w.bbox.x1 / gs, y1: w.bbox.y1 / gs,
+            syms: (w.symbols || []).map(q => ({ ch: q.text, conf: q.confidence, x0: q.bbox.x0 / gs, y0: q.bbox.y0 / gs, x1: q.bbox.x1 / gs, y1: q.bbox.y1 / gs })) })));
+          for (const seg of segs) {
+            const t2 = segs.length === 1 ? text : cleanText(seg.t); if (!t2 || !/[\p{L}\p{N}]/u.test(t2)) continue;
+            const it = makeItem(t2, seg.x0, seg.y0, seg.x1, seg.y1, 1); if (it) { attachSyms(it, seg.words); result.push(it); }
+          }
+          continue;
+        }
+        const b = u.bbox;
+        const nLines = key === 'paragraphs' ? Math.max(1, text.split('\n').length) : 1;
+        const it = makeItem(text, b.x0 / gs, b.y0 / gs, b.x1 / gs, b.y1 / gs, nLines);
+        if (it) result.push(it);
+      }
+
+      // 3) 표 칸마다 따로 인식
+      quiet = true;
+      let done = 0, idx = 0;
+      const todo = cells.filter(c => !c.blank);
+      const runOne = async (w) => {
+        while (idx < todo.length) {
+          const c = todo[idx++];
+          try { const its = await recognizeCell(w, c); result.push(...its); } catch (e) { console.warn(e); }
+          done++; setP(`표 칸 인식 중 (${done}/${todo.length})`, 0.35 + 0.65 * done / todo.length);
+        }
+      };
+      await Promise.all(workers.map(runOne));
+
+      // 읽는 순서로 정렬
+      result.sort((a, b) => { const ov = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y); return ov > Math.min(a.h, b.h) * 0.5 ? a.x - b.x : a.y - b.y; });
+      setP('글꼴과 위치 맞추는 중', 1); await tick();
+      try { await Promise.race([Promise.all(['400', '700'].flatMap(wt => ['Noto Sans KR', 'Nanum Gothic', 'Nanum Myeongjo'].map(f => document.fonts.load(`${wt} 20px "${f}"`)))), new Promise(r => setTimeout(r, 1500))]); } catch (e) {}
+      if ($('#autoFont').checked) { defaultFont = pickFont(result); $('#gFont').value = defaultFont; }
+      result.forEach(it => { it.font = defaultFont; if (it.ink) fitExact(it); });
+      buildGlyphLib(result);
+      items = []; selId = null; nextId = 1;
+      result.forEach(it => { it.id = nextId++; it.o = snapshot(it); items.push(it); });
+      renderAll();
+      document.body.classList.remove('struct'); $('#btnStruct').classList.remove('on');
+      const nCellTxt = items.filter(i => i.cell).length;
+      toast(cells.length ? `표 칸 ${cells.length}개(글자 있는 칸 ${nCellTxt}개)와 표 밖 글자 ${items.length - nCellTxt}개를 찾았습니다.`
+                         : `${items.length}개 영역을 찾았습니다. 상자를 더블클릭해서 고쳐보세요.`);
+    } catch (err) {
+      console.error(err); toast('글자 인식 중 오류: ' + (err && (err.message || err)) + ' (화면을 캡처해서 알려주세요)', 15000);
+    } finally {
+      clearInterval(watch);
+      workers.forEach(w => w.terminate());
+      prog.style.display = 'none';
+    }
+  }
+
+  function collect(data, key) {
+    if (data[key] && data[key].length) return data[key];
+    const out = [];
+    (data.blocks || []).forEach(b => (b.paragraphs || []).forEach(p => {
+      if (key === 'paragraphs') out.push(p);
+      else (p.lines || []).forEach(l => { if (key === 'lines') out.push(l); else (l.words || []).forEach(w => out.push(w)); });
+    }));
+    return out;
+  }
+
+  function cleanText(t) {
+    t = (t || '').replace(/[ \t]+\n/g, '\n').trim();
+    // 숫자 사이에 끼어든 공백 제거 (예: "12, 450" → "12,450")
+    t = t.replace(/(\d)\s+(?=[,.]\d)/g, '$1').replace(/(\d[,.])\s+(?=\d{3}\b)/g, '$1');
+    // 날짜 표기에서 자주 틀리는 글자 바로잡기 (예: 07훨 → 07월)
+    t = t.replace(/(\d)\s?[훨윌왈뭘](?=\s|$|\d)/g, '$1월').replace(/(\d)\s?[넌닌련](?=\s|$|\d)/g, '$1년').replace(/(\d)\s?[잎읻잍](?=\s|$)/g, '$1일');
+    return t;
+  }
+
+  // 인식된 글자 높이 → 글꼴 크기 배율 (숫자만 있으면 글자 높이가 작게 잡힘)
+  function sizeFactor(t) {
+    if (/[가-힣ㄱ-ㅎ]/.test(t)) return 1.03;
+    const asc = /[A-Z0-9bdfhklt%#$@&!?\/]/.test(t), desc = /[gjpqy;()\[\]]/.test(t), comma = /[,]/.test(t);
+    if (asc && desc) return 1.05;
+    if (asc && comma) return 1.15;
+    if (asc) return 1.37;
+    if (desc) return 1.4;
+    return 1.9;
+  }
+
+  // 글자 영역(x0..y1)으로 상자 만들기. cell이 있으면 칸 안에서 정렬 판단
+  // 실제 잉크 픽셀로 글자 영역을 다시 잡기 (인식 엔진의 좌표는 몇 px씩 어긋남)
+  function refineInk(x0, y0, x1, y1, cell) {
+    const h0 = Math.max(4, y1 - y0);
+    let lx0, ly0, lx1, ly1;
+    if (cell) { lx0 = cell.x + 2; ly0 = cell.y + 2; lx1 = cell.x + cell.w - 2; ly1 = cell.y + cell.h - 2; }
+    else { lx0 = x0 - h0 * 0.5; lx1 = x1 + h0 * 0.5; ly0 = y0 - h0 * 0.5; ly1 = y1 + h0 * 0.5; }
+    lx0 = Math.max(0, Math.floor(lx0)); ly0 = Math.max(0, Math.floor(ly0)); lx1 = Math.min(natW, Math.ceil(lx1)); ly1 = Math.min(natH, Math.ceil(ly1));
+    const W = lx1 - lx0, H = ly1 - ly0; if (W < 2 || H < 2) return [x0, y0, x1, y1];
+    const d = sctx.getImageData(lx0, ly0, W, H).data;
+    const { bg } = sample(x0, y0, x1 - x0, y1 - y0);
+    const B = [1, 3, 5].map(i => parseInt(bg.substr(i, 2), 16));
+    const ink = new Uint8Array(W * H);
+    for (let i = 0, k = 0; i < W * H; i++, k += 4) ink[i] = Math.abs(d[k] - B[0]) + Math.abs(d[k + 1] - B[1]) + Math.abs(d[k + 2] - B[2]) > 90 ? 1 : 0;
+    const row = y => { let n = 0; for (let x = 0; x < W; x++) n += ink[y * W + x]; return n; };
+    const col = (x, ya, yb) => { let n = 0; for (let y = ya; y <= yb; y++) n += ink[y * W + x]; return n; };
+    let ra, rb;
+    if (cell) { ra = 0; while (ra < H && !row(ra)) ra++; rb = H - 1; while (rb >= 0 && !row(rb)) rb--; }
+    else {
+      // 원래 영역 안에서 잉크가 있는 줄부터 시작해 위아래로 이어진 만큼만 넓힘
+      const ca = Math.max(0, Math.round(y0 - ly0)), cb = Math.min(H - 1, Math.round(y1 - ly0) - 1);
+      ra = -1; for (let y = ca; y <= cb; y++) if (row(y)) { ra = y; break; }
+      if (ra < 0) return [x0, y0, x1, y1];
+      rb = ra; for (let y = cb; y >= ca; y--) if (row(y)) { rb = y; break; }
+      while (ra > 0 && row(ra - 1)) ra--;
+      while (rb < H - 1 && row(rb + 1)) rb++;
+    }
+    if (rb < ra) return [x0, y0, x1, y1];
+    let ca = cell ? 0 : Math.max(0, Math.round(x0 - lx0) - 1), cb = cell ? W - 1 : Math.min(W - 1, Math.round(x1 - lx0));
+    while (ca <= cb && !col(ca, ra, rb)) ca++;
+    while (cb >= ca && !col(cb, ra, rb)) cb--;
+    if (cb < ca) return [x0, y0, x1, y1];
+    if (!cell) { while (ca > 0 && col(ca - 1, ra, rb)) ca--; while (cb < W - 1 && col(cb + 1, ra, rb)) cb++; }
+    return [lx0 + ca, ly0 + ra, lx0 + cb + 1, ly0 + rb + 1];
+  }
+
+  function makeItem(text, x0, y0, x1, y1, nLines, cell) {
+    if (nLines === 1 || cell) [x0, y0, x1, y1] = refineInk(x0, y0, x1, y1, cell);
+    let w = x1 - x0, h = y1 - y0;
+    if (w < 2 || h < 3) return null;
+    const rawLine = h / nLines;
+    const pad = Math.max(2, Math.round(rawLine * 0.14));
+    let x = x0 - pad, y = y0 - pad, align = 'left';
+    w += pad * 2; h += pad * 2;
+    if (cell) {
+      const cx0 = cell.x + 1, cx1 = cell.x + cell.w - 1;
+      const lg = x0 - cx0, rg = cx1 - x1;
+      if (Math.abs(lg - rg) <= Math.max(4, 0.25 * Math.max(lg, rg)) && lg > 4) { align = 'center'; x = cx0; w = cx1 - cx0; }
+      else if (rg < lg * 0.6) { align = 'right'; x = cx0; w = x1 + pad - cx0; }
+      else { w = cx1 - x; }
+      y = Math.max(cell.y + 1, y); h = Math.max(y1 + 1, Math.min(cell.y + cell.h - 1, y1 + pad)) - y;
+    }
+    const { bg, fg } = sample(x0, y0, x1 - x0, y1 - y0);
+    return { x: Math.round(x), y: Math.round(y), w: Math.round(w), h: Math.round(h), text, orig: text, bg, color: fg,
+             size: Math.max(6, Math.round(rawLine * sizeFactor(text))), lineH: Math.round(h / nLines), bold: false, align,
+             font: defaultFont, manual: false, styled: false, cell: !!cell, padL: 0, padR: 0,
+             ink: nLines === 1 ? [x0, y0, x1, y1] : null };
+  }
+
+  // 한 줄 안에서 간격이 크게 벌어진 곳을 나눔 ("성명      최주영" → 2개)
+  function splitByGap(ws) {
+    ws = ws.filter(w => (w.t || '').trim());
+    if (!ws.length) return [];
+    const hgt = Math.max(...ws.map(w => w.y1 - w.y0));
+    const segs = []; let cur = null;
+    for (const w of ws) {
+      const gap = cur ? w.x0 - cur.x1 : 0;
+      if (cur && gap > Math.max(14, hgt * 1.6)) { segs.push(cur); cur = null; }
+      if (!cur) cur = { t: w.t, x0: w.x0, y0: w.y0, x1: w.x1, y1: w.y1, words: [w] };
+      else { cur.words.push(w); cur.t += (gap > hgt * 0.22 ? ' ' : '') + w.t; cur.x1 = Math.max(cur.x1, w.x1); cur.y0 = Math.min(cur.y0, w.y0); cur.y1 = Math.max(cur.y1, w.y1); }
+    }
+    if (cur) segs.push(cur);
+    return segs;
+  }
+
+  // ───────── 원본 글자 모양 재사용 (문서에 있던 글자를 잘라 그대로 씀) ─────────
+  let glyphLib = new Map();   // key → Map(char → glyph)
+  // 내장 비트맵 글꼴: 굴림/돋움 9pt (사용자 캡처에서 추출, 4 . , / ( ) + 는 같은 모양으로 그림)
+  const PIXEL9 = { space: 4, chars: {"2":{"bm":[".###.","#...#","#...#","....#","...#.","..#..",".#...","#....","#####"],"dy":-9,"lsb":0,"adv":6},"0":{"bm":[".###.","#...#","#...#","#...#","#...#","#...#","#...#","#...#",".###."],"dy":-9,"lsb":0,"adv":6},"6":{"bm":[".###.","#...#","#....","#....","####.","#...#","#...#","#...#",".###."],"dy":-9,"lsb":0,"adv":6},"-":{"bm":["#####"],"dy":-5,"lsb":0,"adv":6},"1":{"bm":[".#","##",".#",".#",".#",".#",".#",".#",".#"],"dy":-9,"lsb":1,"adv":6},"5":{"bm":["#####","#....","#....","####.","#...#","....#","....#","#...#",".###."],"dy":-9,"lsb":0,"adv":6},"9":{"bm":[".###.","#...#","#...#","#...#",".####","....#","....#","#...#",".###."],"dy":-9,"lsb":0,"adv":6},":":{"bm":["#","#",".",".",".","#","#"],"dy":-8,"lsb":0,"adv":4},"~":{"bm":[".##...#","#..###."],"dy":-6,"lsb":0,"adv":9},"8":{"bm":[".###.","#...#","#...#","#...#",".###.","#...#","#...#","#...#",".###."],"dy":-9,"lsb":0,"adv":6},"7":{"bm":["#####","....#","...#.","...#.","...#.","..#..","..#..","..#..","..#.."],"dy":-9,"lsb":0,"adv":6},"년":{"bm":["#.......#","#....####","#.......#","#....####","#.......#","#######.#","........#","........#",".#.......",".#.......",".########"],"dy":-10,"lsb":0,"adv":12},"월":{"bm":["..###...#",".#...#.##","..###...#","........#","#######.#","...#.....",".########","........#",".########",".#.......",".########"],"dy":-10,"lsb":0,"adv":12},"3":{"bm":[".###.","#...#","....#","....#",".###.","....#","....#","#...#",".###."],"dy":-9,"lsb":0,"adv":6},"일":{"bm":[".###....#","#...#...#","#...#...#","#...#...#",".###....#",".........",".########","........#",".########",".#.......",".########"],"dy":-10,"lsb":0,"adv":12},"4":{"bm":["...#.","..##.","..##.",".#.#.",".#.#.","#..#.","#####","...#.","...#."],"dy":-9,"lsb":0,"adv":6},".":{"bm":["#"],"dy":-1,"lsb":1,"adv":3},",":{"bm":["#","#"],"dy":-1,"lsb":1,"adv":3},"/":{"bm":["....#","....#","...#.","...#.","..#..",".#...",".#...","#....","#...."],"dy":-9,"lsb":0,"adv":6},"(":{"bm":["..#",".#.","#..","#..","#..","#..","#..","#..",".#.","..#"],"dy":-9,"lsb":0,"adv":4},")":{"bm":["#..",".#.","..#","..#","..#","..#","..#","..#",".#.","#.."],"dy":-9,"lsb":0,"adv":4},"+":{"bm":["..#..","..#..","#####","..#..","..#.."],"dy":-7,"lsb":0,"adv":6}} };
+  const bmCanvas = {};
+  function pxGlyph(ch) {
+    const g = PIXEL9.chars[ch]; if (!g) return null;
+    if (!bmCanvas[ch]) {
+      const w = g.bm[0].length, h = g.bm.length, c = document.createElement('canvas'); c.width = w; c.height = h;
+      const x = c.getContext('2d'); x.fillStyle = '#000';
+      g.bm.forEach((row, j) => [...row].forEach((v, i) => { if (v === '#') x.fillRect(i, j, 1, 1); }));
+      bmCanvas[ch] = c;
+    }
+    return { ...g, c: bmCanvas[ch], w: g.bm[0].length, h: g.bm.length };
+  }
+  // 잘라낸 글자가 내장 비트맵 글자와 같은지
+  function sameAsPixel(r) {
+    const g = PIXEL9.chars[r.ch]; if (!g || g.bm[0].length !== r.w || g.bm.length !== r.h) return false;
+    const d = r.c.getContext('2d').getImageData(0, 0, r.w, r.h).data; let bad = 0;
+    for (let j = 0; j < r.h; j++) for (let i = 0; i < r.w; i++) if ((d[(j * r.w + i) * 4 + 3] > 127) !== (g.bm[j][i] === '#')) bad++;
+    return bad <= 1;
+  }
+  const cssFont = f => f === 'PIXEL9' ? 'Gulim, Dotum, sans-serif' : f;
+  function attachSyms(it, words) {
+    if (!words) return;
+    const syms = [], wordGaps = [];
+    words.forEach((w, wi) => {
+      const ss = (w.syms || []).filter(q => q.ch && q.ch.trim());
+      ss.forEach((q, i) => syms.push({ ...q, nextX0: i + 1 < ss.length ? ss[i + 1].x0 : null }));
+      if (wi > 0) wordGaps.push(w.x0 - words[wi - 1].x1);
+    });
+    if (!syms.length) return;
+    // 기준선: 아래로 내려가는 획이 없는 글자들의 아래쪽 끝
+    const bs = syms.filter(q => /[0-9A-Z가-힣]/.test(q.ch)).map(q => q.y1).sort((a, b) => a - b);
+    it.base = bs.length ? bs[bs.length >> 1] : it.ink ? it.ink[3] : it.y + it.h;
+    const hs = syms.filter(q => /[0-9가-힣]/.test(q.ch)).map(q => q.y1 - q.y0).sort((a, b) => a - b);
+    it.gh = hs.length ? Math.round(hs[hs.length >> 1]) : Math.round(it.ink ? it.ink[3] - it.ink[1] : it.h);
+    it.syms = syms; it.wordGaps = wordGaps;
+  }
+  // 이미지에서 글자 덩어리를 직접 잘라 텍스트 글자와 짝짓기
+  function segmentItem(it) {
+    if (!it.ink || !it.text || it.text.includes('\n')) return null;
+    const X0 = Math.max(0, Math.floor(it.ink[0]) - 2), Y0 = Math.max(0, Math.floor(it.ink[1]) - 2);
+    const X1 = Math.min(natW, Math.ceil(it.ink[2]) + 2), Y1 = Math.min(natH, Math.ceil(it.ink[3]) + 2);
+    const w = X1 - X0, h = Y1 - Y0; if (w < 3 || h < 4) return null;
+    const B = [1, 3, 5].map(i => parseInt(it.bg.substr(i, 2), 16)), F = [1, 3, 5].map(i => parseInt(it.color.substr(i, 2), 16));
+    const full = Math.abs(B[0] - F[0]) + Math.abs(B[1] - F[1]) + Math.abs(B[2] - F[2]);
+    if (full < 60) return null;
+    const d = sctx.getImageData(X0, Y0, w, h).data, A = new Float32Array(w * h), col = new Uint16Array(w);
+    for (let j = 0; j < h; j++) for (let i = 0; i < w; i++) {
+      const k = (j * w + i) * 4, v = Math.min(1, (Math.abs(d[k] - B[0]) + Math.abs(d[k + 1] - B[1]) + Math.abs(d[k + 2] - B[2])) / full);
+      A[j * w + i] = v; if (v > 0.3) col[i]++;
+    }
+    const blobs = []; let st = -1;
+    for (let i = 0; i <= w; i++) { const on = i < w && col[i] > 0; if (on && st < 0) st = i; else if (!on && st >= 0) { blobs.push([st, i - 1]); st = -1; } }
+    const chars = []; let sp = false;
+    for (const ch of it.text) { if (/\s/.test(ch)) { sp = true; continue; } chars.push({ ch, sp }); sp = false; }
+    const n = chars.length, m = blobs.length;
+    if (!n || m < n || m > n * 6) return null;
+    let rowTop = h, rowBot = -1;
+    for (let j = 0; j < h; j++) for (let i = 0; i < w; i++) if (A[j * w + i] > 0.3) { if (j < rowTop) rowTop = j; if (j > rowBot) rowBot = j; }
+    const LH = rowBot - rowTop + 1;
+    const exp = ch => /[가-힣]/.test(ch) ? 0.95 : ch === '1' ? 0.35 : /[0-9]/.test(ch) ? 0.55 : /[A-Z%@&]/.test(ch) ? 0.7 : /[a-z]/.test(ch) ? 0.5
+      : /[.,:;'`]/.test(ch) ? 0.15 : /[-~]/.test(ch) ? 0.45 : /[()\[\]|!]/.test(ch) ? 0.25 : 0.6;
+    // DP: 글자 i에 덩어리 j..k를 배정
+    const INF = 1e9, D = Array.from({ length: n + 1 }, () => new Float64Array(m + 1).fill(INF)), P = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+    D[0][0] = 0;
+    for (let i = 1; i <= n; i++) {
+      const e = Math.max(2, exp(chars[i - 1].ch) * LH);
+      for (let k = i; k <= m; k++) for (let j = Math.max(i, k - 5); j <= k; j++) {
+        const prev = D[i - 1][j - 1]; if (prev >= INF) continue;
+        const x0 = blobs[j - 1][0], x1 = blobs[k - 1][1], ww = x1 - x0 + 1;
+        let gapMax = 0; for (let q = j; q < k; q++) gapMax = Math.max(gapMax, blobs[q][0] - blobs[q - 1][1] - 1);
+        const c = prev + Math.abs(ww - e) / e + (gapMax > LH * 0.3 ? 1 : 0);
+        if (c < D[i][k]) { D[i][k] = c; P[i][k] = j; }
+      }
+    }
+    if (D[n][m] >= INF || D[n][m] / n > 0.45) return null;
+    const res = []; let k = m;
+    for (let i = n; i >= 1; i--) { const j = P[i][k]; res.unshift({ ...chars[i - 1], bx0: blobs[j - 1][0], bx1: blobs[k - 1][1] }); k = j - 1; }
+    for (const r of res) {
+      let t = h, b = -1;
+      for (let j = 0; j < h; j++) for (let i = r.bx0; i <= r.bx1; i++) if (A[j * w + i] > 0.3) { if (j < t) t = j; if (j > b) b = j; }
+      r.top = t; r.bot = b + 1;
+      const gw = r.bx1 - r.bx0 + 1, gh = r.bot - r.top;
+      const c = document.createElement('canvas'); c.width = gw; c.height = gh;
+      const cx = c.getContext('2d'), o = cx.createImageData(gw, gh);
+      for (let jj = 0; jj < gh; jj++) for (let ii = 0; ii < gw; ii++) { const v = A[(jj + r.top) * w + ii + r.bx0]; o.data[(jj * gw + ii) * 4 + 3] = v > 0.06 ? Math.round(v * 255) : 0; }
+      cx.putImageData(o, 0, 0);
+      Object.assign(r, { c, w: gw, h: gh, x: X0 + r.bx0, y: Y0 + r.top });
+    }
+    const bots = res.filter(r => /[0-9A-Z가-힣]/.test(r.ch)).map(r => Y0 + r.bot).sort((a, b) => a - b);
+    const base = bots.length ? bots[bots.length >> 1] : Y0 + rowBot + 1;
+    return { res, base };
+  }
+  const gkey = it => `${Math.round(it.size)}|${it.bold ? 1 : 0}`;
+  function buildGlyphLib(list) {
+    const raw = new Map();
+    for (const it of list) {
+      const sg = segmentItem(it); if (!sg) continue;
+      it.base = sg.base;
+      const hit = sg.res.find(r => !it.bold && sameAsPixel(r));
+      if (hit) {
+        it.pixel9 = true; it.pbase = hit.y - PIXEL9.chars[hit.ch].dy;
+        const f = sg.res[0], pg = PIXEL9.chars[f.ch];
+        it.px0 = f.x - (pg ? pg.lsb : 0);
+      }
+      const key = gkey(it);
+      if (!raw.has(key)) raw.set(key, { chars: new Map(), gaps: [], spaceExtra: [] });
+      const R = raw.get(key);
+      sg.res.forEach((r, i) => {
+        const nx = sg.res[i + 1];
+        const g = { c: r.c, w: r.w, h: r.h, dy: r.y - sg.base, x: r.x };
+        if (nx && !nx.sp) { g.adv = nx.x - r.x; R.gaps.push(nx.x - (r.x + r.w)); }
+        if (nx && nx.sp) g.spTo = nx.x - (r.x + r.w);
+        if (!R.chars.has(r.ch)) R.chars.set(r.ch, []);
+        R.chars.get(r.ch).push(g);
+      });
+    }
+    glyphLib = new Map();
+    const med = a => { if (!a.length) return null; a = a.slice().sort((x, y) => x - y); return a[a.length >> 1]; };
+    for (const [key, R] of raw) {
+      const lib = { chars: new Map(), gap: med(R.gaps), size: +key.split('|')[0], bold: key.endsWith('|1') };
+      for (const [ch, arr] of R.chars) {
+        const cnt = new Map(); arr.forEach(g => { const k = g.w + 'x' + g.h; cnt.set(k, (cnt.get(k) || 0) + 1); });
+        const topK = [...cnt.entries()].sort((a, b) => b[1] - a[1])[0][0];
+        const pick = arr.filter(g => g.w + 'x' + g.h === topK);
+        lib.chars.set(ch, { c: pick[0].c, w: pick[0].w, h: pick[0].h, dy: med(pick.map(x => x.dy)), adv: med(arr.map(x => x.adv).filter(v => v != null)) });
+      }
+      // 띄어쓰기 폭 = 공백 앞뒤 간격 - 보통 글자 간격
+      const sps = [...R.chars.values()].flat().map(g => g.spTo).filter(v => v != null);
+      lib.space = sps.length ? med(sps) - (lib.gap || 0) : null;
+      glyphLib.set(key, lib);
+    }
+    // 비트맵 글꼴이 확인된 크기의 글자들은 모두 비트맵 글꼴로
+    const pxKeys = new Set(list.filter(it => it.pixel9).map(gkey));
+    for (const it of list) if (pxKeys.has(gkey(it))) { it.pixel9 = true; it.font = 'PIXEL9'; if (it.o) it.o.font = 'PIXEL9';
+      if (it.pbase == null) { const sg = it.base; it.pbase = sg; } if (it.px0 == null && it.ink) it.px0 = Math.round(it.ink[0]); }
+  }
+  // 같은 굵기·비슷한 크기의 글자 모양 모음 (가까운 크기 우선)
+  function libFor(it) {
+    if (it.base == null) return null;
+    const libs = [...glyphLib.values()].filter(l => l.bold === !!it.bold && Math.abs(l.size - it.size) <= Math.max(1, it.size * 0.08))
+      .sort((a, b) => Math.abs(a.size - it.size) - Math.abs(b.size - it.size));
+    if (!libs.length) return null;
+    const chars = new Map();
+    for (const l of libs.slice().reverse()) for (const [k, v] of l.chars) chars.set(k, v);
+    return { chars, gap: libs[0].gap, space: libs.find(l => l.space != null)?.space ?? null, h: it.size };
+  }
+  // 글자 모양으로 텍스트 그리기 → {canvas, w, top}
+  function pxLayout(text, lib) {
+    const out = []; let x = 0;
+    for (const ch of text) {
+      if (/\s/.test(ch)) { x += PIXEL9.space; continue; }
+      const g = pxGlyph(ch);
+      if (g) { out.push({ c: g.c, x: x + g.lsb, y: g.dy }); x += g.adv; continue; }
+      const dg = lib && lib.chars.get(ch);
+      if (dg) { const wide = /[가-힣]/.test(ch); out.push({ c: dg.c, x, y: wide ? -10 : dg.dy }); x += wide ? 12 : dg.w + 1; continue; }
+      out.push({ ch, x }); x += /[가-힣]/.test(ch) ? 12 : 6;
+    }
+    return { parts: out, adv: x };
+  }
+  function renderPixel(it) {
+    const lib = libFor(it);
+    const L = pxLayout(it.text, lib), O = pxLayout(it.orig || it.text, lib);
+    const base = it.pbase != null ? it.pbase : it.base, ox = it.px0 != null ? it.px0 : Math.round(it.ink ? it.ink[0] : it.x);
+    if (base == null) return null;
+    let top = 0, bot = 1, right = L.adv;
+    for (const p of L.parts) {
+      if (!p.c) { // 비트맵에 없는 글자: 굴림 계열 글꼴로
+        const c = document.createElement('canvas'), w = /[가-힣]/.test(p.ch) ? 12 : 6; c.width = w; c.height = 13;
+        const x = c.getContext('2d'); x.font = '12px Gulim, Dotum, sans-serif'; x.textBaseline = 'alphabetic'; x.fillStyle = '#000'; x.fillText(p.ch, 0, 10);
+        p.c = c; p.y = -10;
+      }
+      top = Math.min(top, p.y); bot = Math.max(bot, p.y + p.c.height); right = Math.max(right, p.x + p.c.width);
+    }
+    const W = Math.max(1, Math.ceil(right)), H = bot - top;
+    const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+    const cx = cv.getContext('2d'); cx.imageSmoothingEnabled = false;
+    L.parts.forEach(p => cx.drawImage(p.c, Math.round(p.x), Math.round(p.y - top)));
+    cx.globalCompositeOperation = 'source-in'; cx.fillStyle = it.color; cx.fillRect(0, 0, W, H);
+    const sx = it.align === 'right' ? ox + O.adv - L.adv : it.align === 'center' ? ox + (O.adv - L.adv) / 2 : ox;
+    return { canvas: cv, x: Math.round(sx), y: Math.round(base + top) };
+  }
+  function renderGlyphs(it) {
+    if (!it.text || it.text.includes('\n')) return null;
+    if (it.font === 'PIXEL9' && (it.pbase != null || it.base != null)) return renderPixel(it);
+    if (!$('#glyphMode').checked || it.base == null) return null;
+    const lib = libFor(it); if (!lib) return null;
+    const chars = [...it.text];
+    if (!chars.some(ch => lib.chars.has(ch))) return null;
+    const gap = lib.gap != null ? lib.gap : Math.max(1, Math.round(lib.h * 0.08));
+    const space = lib.space != null ? Math.max(1, lib.space) : Math.round(lib.h * 0.3);
+    const parts = []; let x = 0, top = 0, bot = 0;
+    for (const ch of chars) {
+      if (/\s/.test(ch)) { x += space; continue; }
+      const g = lib.chars.get(ch);
+      if (g) { parts.push({ c: g.c, x, y: g.dy }); top = Math.min(top, g.dy); bot = Math.max(bot, g.dy + g.h); x += g.adv != null ? g.adv : g.w + gap; continue; }
+      // 문서에 없는 글자: 글꼴로 그리되 크기·굵기는 맞춤
+      const m = metrics(ch, it.font, it.bold, it.size);
+      const w = Math.max(1, Math.ceil(m.l + m.r)), h = Math.max(1, Math.ceil(m.a + m.d));
+      const c = document.createElement('canvas'); c.width = w; c.height = h;
+      const cx = c.getContext('2d'); cx.font = `${it.bold ? 700 : 400} ${it.size}px ${cssFont(it.font)}`; cx.fillStyle = '#000'; cx.fillText(ch, m.l, m.a);
+      parts.push({ c, x, y: -Math.ceil(m.a) }); top = Math.min(top, -Math.ceil(m.a)); bot = Math.max(bot, h - Math.ceil(m.a));
+      x += w + gap;
+    }
+    const W = Math.max(1, Math.ceil(parts.length ? Math.max(...parts.map(p => p.x + p.c.width)) : x)), H = Math.max(1, bot - top);
+    const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+    const cx = cv.getContext('2d');
+    parts.forEach(p => cx.drawImage(p.c, Math.round(p.x), Math.round(p.y - top)));
+    cx.globalCompositeOperation = 'source-in'; cx.fillStyle = it.color; cx.fillRect(0, 0, W, H);
+    // 가로 위치: 원래 글자 시작(또는 끝/가운데)에 맞춤
+    const [ix0, , ix1] = it.ink || [it.x, 0, it.x + it.w];
+    const ax = it.align === 'right' ? ix1 - W : it.align === 'center' ? (ix0 + ix1) / 2 - W / 2 : ix0;
+    return { canvas: cv, x: Math.round(ax), y: Math.round(it.base + top) };
+  }
+
+  // ───────── 원래 글자와 똑같은 크기·위치·굵기로 맞추기 ─────────
+  const mcv = document.createElement('canvas'), mctx = mcv.getContext('2d');
+  function metrics(text, font, bold, size) {
+    mctx.font = `${bold ? 700 : 400} ${size}px ${cssFont(font)}`;
+    const m = mctx.measureText(text);
+    return { l: m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, a: m.actualBoundingBoxAscent, d: m.actualBoundingBoxDescent,
+             fa: m.fontBoundingBoxAscent ?? size * 0.88, fd: m.fontBoundingBoxDescent ?? size * 0.24, adv: m.width };
+  }
+  function fontMetricsOnly(font, bold, size) { const m = metrics('가Hg', font, bold, size); return { fa: m.fa, fd: m.fd }; }
+  // 원본 잉크 크기(가로·세로)를 같은 글자로 맞추는 글꼴 크기
+  function sizesFor(t, font, bold, inkW, inkH) {
+    const m = metrics(t, font, bold, 100), mw = m.l + m.r, mh = m.a + m.d;
+    if (!(mw > 0 && mh > 0)) return null;
+    return { sW: inkW / mw * 100, sH: inkH / mh * 100 };
+  }
+  function fontInstalled(f) {
+    if (f === 'PIXEL9') return false;
+    const probe = '가나다라ABCabc123';
+    return ['monospace', 'serif'].every(fb => { mctx.font = `40px ${fb}`; const a = mctx.measureText(probe).width; mctx.font = `40px ${f.split(',')[0]}, ${fb}`; return Math.abs(mctx.measureText(probe).width - a) > 0.5; });
+  }
+  // 문서 전체에서 원본 글자 비율과 가장 잘 맞는 글꼴 고르기
+  function pickFont(list) {
+    const sample = list.filter(it => it.ink && it.text.replace(/\s/g, '').length >= 3).slice(0, 60);
+    if (!sample.length) return defaultFont;
+    let best = defaultFont, bestScore = Infinity;
+    const korean = sample.some(it => /[가-힣]/.test(it.text));
+    for (const [f] of FONTS) {
+      if (korean && /Arial|Times/.test(f)) continue;
+      if (!fontInstalled(f)) continue;
+      const errs = sample.map(it => { const [x0, y0, x1, y1] = it.ink; const r = sizesFor(it.text, f, false, x1 - x0, y1 - y0); return r ? Math.abs(Math.log(r.sW / r.sH)) : 9; }).sort((a, b) => a - b);
+      const score = errs[errs.length >> 1];
+      if (score < bestScore) { bestScore = score; best = f; }
+    }
+    return best;
+  }
+  function inkCountOrig(x0, y0, x1, y1, bg, fg) {
+    x0 = Math.max(0, Math.floor(x0)); y0 = Math.max(0, Math.floor(y0)); x1 = Math.min(natW, Math.ceil(x1)); y1 = Math.min(natH, Math.ceil(y1));
+    if (x1 <= x0 || y1 <= y0) return 0;
+    const d = sctx.getImageData(x0, y0, x1 - x0, y1 - y0).data;
+    const B = [1, 3, 5].map(i => parseInt(bg.substr(i, 2), 16)), F = [1, 3, 5].map(i => parseInt(fg.substr(i, 2), 16));
+    const full = Math.abs(B[0] - F[0]) + Math.abs(B[1] - F[1]) + Math.abs(B[2] - F[2]);
+    if (full < 40) return 0;
+    let n = 0; for (let k = 0; k < d.length; k += 4) if (Math.abs(d[k] - B[0]) + Math.abs(d[k + 1] - B[1]) + Math.abs(d[k + 2] - B[2]) > full * 0.5) n++;
+    return n;
+  }
+  function inkCountRender(t, font, bold, size) {
+    const m = metrics(t, font, bold, size);
+    const w = Math.ceil(m.l + m.r) + 8, h = Math.ceil(m.a + m.d) + 8;
+    if (w < 2 || h < 2 || w * h > 4e6) return 0;
+    mcv.width = w; mcv.height = h; mctx.clearRect(0, 0, w, h);
+    mctx.font = `${bold ? 700 : 400} ${size}px ${font}`; mctx.fillStyle = '#000'; mctx.textBaseline = 'alphabetic';
+    mctx.fillText(t, 4 + m.l, 4 + m.a);
+    const d = mctx.getImageData(0, 0, w, h).data; let n = 0;
+    for (let k = 3; k < d.length; k += 4) if (d[k] > 127) n++;
+    return n;
+  }
+  function fitExact(it) {
+    const [x0, y0, x1, y1] = it.ink, t = it.text, inkW = x1 - x0, inkH = y1 - y0;
+    if (!t || inkW < 2 || inkH < 2) return;
+    const n = t.replace(/\s/g, '').length;
+    const choose = bold => { const r = sizesFor(t, it.font, bold, inkW, inkH); if (!r) return null;
+      return { bold, size: (n >= 3 && Math.abs(Math.log(r.sW / r.sH)) < 0.3) ? r.sW : r.sH }; };
+    const reg = choose(false), bol = choose(true);
+    if (!reg) return;
+    let pick = reg;
+    const orig = inkCountOrig(x0, y0, x1, y1, it.bg, it.color);
+    if (bol && orig > 20) {
+      const er = Math.abs(Math.log(orig / Math.max(1, inkCountRender(t, it.font, false, reg.size))));
+      const eb = Math.abs(Math.log(orig / Math.max(1, inkCountRender(t, it.font, true, bol.size))));
+      if (eb < er * 0.75) pick = bol;
+    }
+    it.bold = pick.bold; it.size = Math.round(pick.size * 10) / 10;
+    const m = metrics(t, it.font, it.bold, it.size);
+    // 기준선(baseline)을 원본과 같은 높이에: 줄 높이로 맞춤
+    const bo = (y0 - it.y) + m.a;               // 상자 위쪽에서 기준선까지
+    const L = 2 * bo - m.fa + m.fd;
+    it.base = y0 + m.a;
+    if (L > 3) it.lineH = Math.round(L * 10) / 10;
+    // 가로 시작점을 원본 잉크에 맞춤
+    it.padL = 0; it.padR = 0;
+    if (it.align === 'left') it.padL = Math.max(0, x0 + m.l - it.x);
+    else if (it.align === 'right') it.padR = Math.max(0, it.x + it.w - (x1 - m.r + m.adv));
+    else { const start = (x0 + x1) / 2 - (m.r - m.l) / 2, anchor = start + m.adv / 2, dlt = anchor - (it.x + it.w / 2); if (dlt > 0) it.padL = 2 * dlt; else it.padR = -2 * dlt; }
+  }
+
+  const COMMON_WORDS = new Set(('합계 소계 총계 누계 계 금액 수량 단가 단위 비고 품목 품명 규격 공급가액 세액 부가세 합계금액 '
+    + '일자 날짜 구분 항목 내용 담당 담당자 부서 성명 이름 직위 직급 연락처 전화 주소 번호 순번 코드 상태 결과 기간 '
+    + '시작일 종료일 예산 실적 목표 달성률 비율 증감 전년비 전월비 매출 매입 원가 이익 영업이익 순이익 평균 최대 최소 '
+    + '입금 출금 잔액 수입 지출 미집계 해당없음 없음 있음 완료 진행중 대기 승인 반려 확인 비고란').split(' '));
+  const NUM_RE = /[0-9.,%+\-−()\/:$₩원]/;
+  // 확대한 칸 이미지로 회색조 / 흑백(2단계) 세 가지 버전 만들기
+  function variants(cv) {
+    const w = cv.width, h = cv.height, id = cv.getContext('2d').getImageData(0, 0, w, h), d = id.data, n = w * h;
+    const g = new Uint8Array(n); const hist = new Uint32Array(256);
+    for (let i = 0, k = 0; i < n; i++, k += 4) { const v = (d[k] * 299 + d[k + 1] * 587 + d[k + 2] * 114) / 1000 | 0; g[i] = v; hist[v]++; }
+    let lo = 0, hi = 255, acc = 0; for (; lo < 255; lo++) { acc += hist[lo]; if (acc > n * 0.01) break; }
+    acc = 0; for (; hi > 0; hi--) { acc += hist[hi]; if (acc > n * 0.01) break; }
+    if (hi - lo < 20) { lo = 0; hi = 255; }
+    let sum = 0; for (let i = 0; i < n; i++) sum += g[i];
+    const inv = sum / n < 128;   // 어두운 배경이면 반전
+    const mk = th => {
+      const c = document.createElement('canvas'); c.width = w; c.height = h;
+      const x = c.getContext('2d'), o = x.createImageData(w, h), od = o.data;
+      for (let i = 0, k = 0; i < n; i++, k += 4) {
+        let v = Math.max(0, Math.min(255, (g[i] - lo) * 255 / (hi - lo)));
+        if (inv) v = 255 - v;
+        if (th) v = v > th ? 255 : 0;
+        od[k] = od[k + 1] = od[k + 2] = v; od[k + 3] = 255;
+      }
+      x.putImageData(o, 0, 0); return c;
+    };
+    return [mk(0), mk(150), mk(190)];
+  }
+
+  async function recognizeCell(worker, c) {
+    let s = c.h < 60 ? Math.min(4, Math.max(2, 72 / c.h)) : 2;
+    const pad = 16;
+    const cv = document.createElement('canvas');
+    cv.width = Math.round(c.w * s) + pad * 2; cv.height = Math.round(c.h * s) + pad * 2;
+    const cx = cv.getContext('2d'); cx.fillStyle = c.bg; cx.fillRect(0, 0, cv.width, cv.height);
+    cx.imageSmoothingQuality = 'high'; cx.imageSmoothingEnabled = true;
+    cx.drawImage(src, c.x, c.y, c.w, c.h, pad, pad, c.w * s, c.h * s);
+    const single = c.h <= c.rowH * 1.6;
+    let vs = variants(cv);
+    if (CRISP) {   // 선명한 화면 글씨: 흑백 변환은 1px 획을 망가뜨림 → 회색조를 두 배율로
+      const s2 = s * 1.5, cv2 = document.createElement('canvas');
+      cv2.width = Math.round(c.w * s2) + pad * 2; cv2.height = Math.round(c.h * s2) + pad * 2;
+      const c2 = cv2.getContext('2d'); c2.fillStyle = c.bg; c2.fillRect(0, 0, cv2.width, cv2.height); c2.imageSmoothingQuality = 'high';
+      c2.drawImage(src, c.x, c.y, c.w, c.h, pad, pad, c.w * s2, c.h * s2);
+      vs = [vs[0], variants(cv2)[0], vs[1]];
+    }
+    const cands = [];
+    const read = async (im, wl) => {
+      await worker.setParameters({ tessedit_pageseg_mode: single ? '7' : '6', tessedit_char_whitelist: wl || '' });
+      const r = (await worker.recognize(im)).data;
+      let t = cleanText(r.text);
+      if (t) cands.push({ text: t, conf: r.confidence, lines: r.lines || [] });
+    };
+    for (const v of vs) await read(v);
+    const best0 = cands.slice().sort((a, b) => b.conf - a.conf)[0];
+    const chars = best0 ? best0.text.replace(/\s/g, '') : '';
+    // 숫자 칸이면 숫자·기호만 허용해서 한 번 더
+    if (chars && [...chars].filter(ch => NUM_RE.test(ch)).length / chars.length >= 0.6) {
+      await read(vs[1], '0123456789.,%+-()/:$₩원~ 년월일시분초');
+    }
+    await worker.setParameters({ tessedit_char_whitelist: '' });
+    if (!cands.length) return [];
+    // 다수결: 같은 결과끼리 신뢰도 합산 + 표에 자주 나오는 단어 가산점
+    const groups = new Map();
+    for (const k of cands) {
+      const key = k.text.replace(/96$/, '%');
+      const gq = groups.get(key) || { text: key, score: 0, conf: 0, lines: k.lines, raw: k.text };
+      gq.score += k.conf; if (k.conf > gq.conf) { gq.conf = k.conf; gq.lines = k.lines; gq.raw = k.text; }
+      groups.set(key, gq);
+    }
+    for (const gq of groups.values()) {
+      if (COMMON_WORDS.has(gq.text.replace(/\s/g, ''))) gq.score += 120;
+      if (/^[+\-−]?\d{1,3}(,\d{3})+(\.\d+)?$/.test(gq.text)) gq.score += 15;
+      // 날짜·시간 형식으로 읽힌 결과에 가산점
+      const fmt = (gq.text.match(/\d{2,4}년\s?\d{1,2}월\s?\d{1,2}일|\d{4}[-./]\d{1,2}[-./]\d{1,2}|\b\d{1,2}:\d{2}\b/g) || []).length;
+      gq.score += fmt * 40;
+    }
+    const best = [...groups.values()].sort((a, b) => b.score - a.score)[0];
+    let { text, conf, lines } = best;
+    // 단어 단위 투표: 각 단어마다 가장 그럴듯한 것을 고름
+    {
+      const tk = cands.map(k => ({ t: k.text.split(/\s+/), conf: k.conf }));
+      const byLen = new Map(); tk.forEach(k => byLen.set(k.t.length, (byLen.get(k.t.length) || 0) + k.conf));
+      const L = [...byLen.entries()].sort((a, b) => b[1] - a[1])[0][0];
+      const S = tk.filter(k => k.t.length === L);
+      if (S.length >= 2 && L > 1) {
+        const norm = w => w.replace(/[:.,\-]/g, '');
+        const bonus = w => (/^\d{2,4}년$|^\d{1,2}[월일시분초]$|^\d{1,2}:\d{2}$|^\d{4}-\d{1,2}-\d{1,2}$/.test(w) ? 100 : 0)
+          + (COMMON_WORDS.has(w) ? 80 : 0) - (/^[A-Z]{1,3}$/.test(w) && /[가-힣]/.test(text) ? 40 : 0);
+        const out = [];
+        for (let i = 0; i < L; i++) {
+          const g = new Map();
+          for (const k of S) { const w = k.t[i], n = norm(w); const e = g.get(n) || { sc: 0, vars: new Map() }; e.sc += k.conf; e.vars.set(w, (e.vars.get(w) || 0) + k.conf); g.set(n, e); }
+          for (const e of g.values()) e.sc += Math.max(...[...e.vars.keys()].map(bonus));
+          const bestN = [...g.values()].sort((a, b) => b.sc - a.sc)[0];
+          // 같은 글자에서 구두점만 다르면 구두점 있는 쪽(빠뜨리는 경우가 훨씬 흔함)
+          const v = [...bestN.vars.entries()].sort((a, b) => (b[0].replace(/[^:.,\-]/g, '').length - a[0].replace(/[^:.,\-]/g, '').length) || (b[1] - a[1]))[0][0];
+          out.push(v);
+        }
+        const tv = out.join(' ');
+        if (tv !== text) { const same = cands.find(k => k.text === tv); text = tv; if (same) lines = same.lines; }
+      }
+    }
+    const rawOk = cands.some(k => k.text === text);
+    // %를 96으로 잘못 읽은 경우
+    if (/^[+\-−]\d+[.,]\d96$/.test(text)) text = text.replace(/96$/, '%');
+    if (!text || conf < 25 || !/[\p{L}\p{N}]/u.test(text)) return [];
+    const map = b => ({ x0: c.x + (b.x0 - pad) / s, y0: c.y + (b.y0 - pad) / s, x1: c.x + (b.x1 - pad) / s, y1: c.y + (b.y1 - pad) / s });
+    const ls = lines.filter(l => cleanText(l.text)).map(l => ({ t: cleanText(l.text), ...map(l.bbox), words: (l.words || []).map(w => ({ t: w.text, ...map(w.bbox),
+      syms: rawOk ? (w.symbols || []).map(q => ({ ch: q.text, conf: q.confidence, ...map(q.bbox) })) : [] })) }));
+    if (!ls.length) return [];
+    if (ls.length > 3) {   // 큰 칸(글상자 등): 줄마다 따로
+      return ls.map(l => makeItem(l.t, l.x0, l.y0, l.x1, l.y1, 1)).filter(Boolean);
+    }
+    const x0 = Math.min(...ls.map(l => l.x0)), y0 = Math.min(...ls.map(l => l.y0)),
+          x1 = Math.max(...ls.map(l => l.x1)), y1 = Math.max(...ls.map(l => l.y1));
+    if (ls.length === 1 && ls[0].words.length > 1) {
+      const segs = splitByGap(ls[0].words);
+      if (segs.length > 1) return segs.map(sg => { const it = makeItem(cleanText(sg.t), sg.x0, sg.y0, sg.x1, sg.y1, 1); if (it) attachSyms(it, sg.words); return it; }).filter(Boolean);
+    }
+    const t = ls.length === 1 ? text.replace(/\n/g, ' ') : ls.map(l => l.t).join('\n');
+    const it = makeItem(t, x0, y0, x1, y1, ls.length, c);
+    if (it && ls.length === 1) attachSyms(it, ls[0].words);
+    return it ? [it] : [];
+  }
+
+  // 표 밖 글자의 대략적인 줄 높이(가로 투영으로 추정)
+  function estimateTextH(cs) {
+    const W = natW, H = natH, d = sctx.getImageData(0, 0, W, H).data;
+    const inCell = new Uint8Array(W * H);
+    for (const c of cs) for (let y = Math.max(0, c.y - 4); y < Math.min(H, c.y + c.h + 4); y++) inCell.fill(1, y * W + Math.max(0, c.x - 4), y * W + Math.min(W, c.x + c.w + 4));
+    const smp = []; for (let i = 0; i < W * H; i += 41) smp.push(d[i * 4] * 0.299 + d[i * 4 + 1] * 0.587 + d[i * 4 + 2] * 0.114);
+    smp.sort((a, b) => a - b); const bgL = smp[smp.length >> 1];
+    const rows = new Uint32Array(H);
+    for (let y = 0; y < H; y++) { let n = 0; for (let x = 0; x < W; x++) { const i = y * W + x; if (inCell[i]) continue; const k = i * 4; const L = d[k] * 0.299 + d[k + 1] * 0.587 + d[k + 2] * 0.114; if (Math.abs(L - bgL) > 70) n++; } rows[y] = n; }
+    const hs = []; let st = -1;
+    for (let y = 0; y <= H; y++) { const on = y < H && rows[y] > 1; if (on && st < 0) st = y; else if (!on && st >= 0) { const h = y - st; if (h >= 5 && h <= 300) hs.push(h); st = -1; } }
+    if (!hs.length) return 20;
+    hs.sort((a, b) => a - b); return hs[hs.length >> 1];
+  }
+
+  // ───────── 표 구조(칸) 찾기 ─────────
+  function detectCells() {
+    const W = natW, H = natH, N = W * H;
+    const d = sctx.getImageData(0, 0, W, H).data;
+    const lum = new Uint8Array(N);
+    for (let i = 0, k = 0; i < N; i++, k += 4) lum[i] = (d[k] * 299 + d[k + 1] * 587 + d[k + 2] * 114) / 1000;
+    const smp = []; for (let i = 0; i < N; i += 37) smp.push(lum[i]); smp.sort((a, b) => a - b);
+    const bgL = smp[smp.length >> 1];
+    // 선 = 양옆(위아래)보다 진한 가는 줄. 연한 색이 칠해진 면은 선이 아님
+    const sg = bgL >= 110 ? 1 : -1, O = 3, C = 10;
+    const darkH = new Uint8Array(N), darkV = new Uint8Array(N);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+      const i = y * W + x, v = lum[i] * sg;
+      const up = y >= O ? lum[i - O * W] * sg : 255 * sg, dn = y < H - O ? lum[i + O * W] * sg : 255 * sg;
+      const lf = x >= O ? lum[i - O] * sg : 255 * sg, rt = x < W - O ? lum[i + O] * sg : 255 * sg;
+      if (v < Math.min(up, dn) - C) darkH[i] = 1;
+      if (v < Math.min(lf, rt) - C) darkV[i] = 1;
+    }
+
+    const minHL = Math.max(30, Math.round(W * 0.03)), minVL = Math.max(10, Math.round(H * 0.01)), gapT = 2;
+    const maxT = Math.max(5, Math.round(Math.min(W, H) * 0.006));
+    const hm = new Uint8Array(N), vm = new Uint8Array(N);
+    // 가로선 (거의 끊김 없이 이어진 긴 줄만)
+    const hsegs = [];
+    for (let y = 0; y < H; y++) {
+      let st = -1, last = -1, cnt = 0;
+      for (let x = 0; x <= W; x++) {
+        const on = x < W && darkH[y * W + x];
+        if (on) { if (st < 0) { st = x; cnt = 0; } last = x; cnt++; }
+        else if (st >= 0 && (x - last > gapT || x === W)) {
+          const len = last - st + 1;
+          if (len >= minHL && cnt / len >= 0.9) { for (let i = st; i <= last; i++) hm[y * W + i] = 1; hsegs.push([y, st, last]); }
+          st = -1;
+        }
+      }
+    }
+    // 세로선
+    for (let x = 0; x < W; x++) {
+      let st = -1, last = -1, cnt = 0;
+      for (let y = 0; y <= H; y++) {
+        const on = y < H && darkV[y * W + x];
+        if (on) { if (st < 0) { st = y; cnt = 0; } last = y; cnt++; }
+        else if (st >= 0 && (y - last > gapT || y === H)) {
+          const len = last - st + 1;
+          if (len >= minVL && cnt / len >= 0.9) for (let i = st; i <= last; i++) vm[i * W + x] = 1;
+          st = -1;
+        }
+      }
+    }
+    // 세로선이 없는 표: 같은 위치에서 시작·끝나는 가로선들의 양 끝을 세로로 이어 줌
+    const longs = hsegs.filter(g => g[2] - g[1] >= W * 0.15);
+    for (const side of [1, 2]) {
+      const used = new Set();
+      longs.forEach((g, i) => {
+        if (used.has(i)) return;
+        const grp = longs.filter((h, j) => Math.abs(h[side] - g[side]) <= 3 && !used.has(j) && (used.add(j), true));
+        const ys = [...new Set(grp.map(h => h[0]))];
+        if (ys.length < 3) return;   // 가로선이 3개 이상 같은 끝을 공유할 때만
+        const x = Math.round(grp.reduce((a, h) => a + h[side], 0) / grp.length);
+        const ya = Math.min(...ys), yb = Math.max(...ys);
+        for (let y = ya; y <= yb; y++) vm[y * W + x] = 1;
+      });
+    }
+    // 너무 두꺼운 것(색칠된 면)은 선이 아님
+    for (let x = 0; x < W; x++) { let st = -1; for (let y = 0; y <= H; y++) { const on = y < H && hm[y * W + x]; if (on && st < 0) st = y; else if (!on && st >= 0) { if (y - st > maxT) for (let i = st; i < y; i++) hm[i * W + x] = 0; st = -1; } } }
+    for (let y = 0; y < H; y++) { let st = -1; for (let x = 0; x <= W; x++) { const on = x < W && vm[y * W + x]; if (on && st < 0) st = x; else if (!on && st >= 0) { if (x - st > maxT) for (let i = st; i < x; i++) vm[y * W + i] = 0; st = -1; } } }
+    if (!hm.some(v => v) || !vm.some(v => v)) return [];
+    // 합치고 1px 팽창
+    const m = new Uint8Array(N);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+      const i = y * W + x; if (!(hm[i] | vm[i])) continue;
+      for (let dy = -1; dy <= 1; dy++) { const yy = y + dy; if (yy < 0 || yy >= H) continue; for (let dx = -1; dx <= 1; dx++) { const xx = x + dx; if (xx >= 0 && xx < W) m[yy * W + xx] = 1; } }
+    }
+    // 바깥 영역 채우기 → 닫힌 영역이 칸
+    const lab = new Int32Array(N); const stack = new Int32Array(N); let sp = 0;
+    const fill = (seed, id) => {
+      let cnt = 0, x0 = W, y0 = H, x1 = 0, y1 = 0; sp = 0; stack[sp++] = seed; lab[seed] = id;
+      while (sp) {
+        const i = stack[--sp], x = i % W, y = (i / W) | 0; cnt++;
+        if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
+        if (x > 0 && !m[i - 1] && !lab[i - 1]) { lab[i - 1] = id; stack[sp++] = i - 1; }
+        if (x < W - 1 && !m[i + 1] && !lab[i + 1]) { lab[i + 1] = id; stack[sp++] = i + 1; }
+        if (y > 0 && !m[i - W] && !lab[i - W]) { lab[i - W] = id; stack[sp++] = i - W; }
+        if (y < H - 1 && !m[i + W] && !lab[i + W]) { lab[i + W] = id; stack[sp++] = i + W; }
+      }
+      return { cnt, x0, y0, x1, y1 };
+    };
+    for (let x = 0; x < W; x++) { if (!m[x] && !lab[x]) fill(x, -1); const j = (H - 1) * W + x; if (!m[j] && !lab[j]) fill(j, -1); }
+    for (let y = 0; y < H; y++) { const a = y * W, b = y * W + W - 1; if (!m[a] && !lab[a]) fill(a, -1); if (!m[b] && !lab[b]) fill(b, -1); }
+    const out = []; let id = 1;
+    for (let i = 0; i < N; i++) {
+      if (m[i] || lab[i]) continue;
+      const r = fill(i, ++id), w = r.x1 - r.x0 + 1, h = r.y1 - r.y0 + 1;
+      if (w < 8 || h < 8 || r.cnt / (w * h) < 0.8 || (w > W * 0.95 && h > H * 0.95)) continue;
+      out.push({ x: r.x0 + 1, y: r.y0 + 1, w: w - 2, h: h - 2 });
+    }
+    if (!out.length) return [];
+    const hs = out.map(c => c.h).sort((a, b) => a - b); const rowH = hs[hs.length >> 1];
+    for (const c of out) {
+      c.rowH = rowH;
+      // 칸 배경색과 빈 칸 판정
+      let R = [], G = [], B = [];
+      const step = Math.max(1, Math.floor(Math.sqrt(c.w * c.h / 3000)));
+      for (let y = c.y; y < c.y + c.h; y += step) for (let x = c.x; x < c.x + c.w; x += step) { const k = (y * W + x) * 4; R.push(d[k]); G.push(d[k + 1]); B.push(d[k + 2]); }
+      const med = a => a.sort((p, q) => p - q)[a.length >> 1];
+      const br = med(R.slice()), bgc = med(G.slice()), bb = med(B.slice());
+      c.bg = hex(br, bgc, bb);
+      let ink = 0;
+      for (let y = c.y; y < c.y + c.h; y++) for (let x = c.x; x < c.x + c.w; x++) { const k = (y * W + x) * 4; if (Math.abs(d[k] - br) + Math.abs(d[k + 1] - bgc) + Math.abs(d[k + 2] - bb) > 90) ink++; }
+      c.blank = ink < 6;
+    }
+    return out;
+  }
+
+  // 인접한 칸들을 묶어 표 전체 영역 구하기
+  function tableBoxes(cs) {
+    const boxes = cs.map(c => ({ x: c.x, y: c.y, w: c.w, h: c.h, bg: c.bg }));
+    let merged = true;
+    while (merged) {
+      merged = false;
+      for (let i = 0; i < boxes.length && !merged; i++) for (let j = i + 1; j < boxes.length; j++) {
+        const a = boxes[i], b = boxes[j], g = 8;
+        if (a.x - g < b.x + b.w && b.x - g < a.x + a.w && a.y - g < b.y + b.h && b.y - g < a.y + a.h) {
+          const x = Math.min(a.x, b.x), y = Math.min(a.y, b.y);
+          boxes[i] = { x, y, w: Math.max(a.x + a.w, b.x + b.w) - x, h: Math.max(a.y + a.h, b.y + b.h) - y, bg: a.bg };
+          boxes.splice(j, 1); merged = true; break;
+        }
+      }
+    }
+    return boxes;
+  }
+
+  function renderCells() {
+    const cl = $('#cellLayer'); cl.innerHTML = '';
+    for (const c of cells) {
+      const e = document.createElement('div'); e.className = 'cellbox';
+      Object.assign(e.style, { left: c.x + 'px', top: c.y + 'px', width: c.w + 'px', height: c.h + 'px' });
+      cl.append(e);
+    }
+  }
+
+  // ───────── 색 추출 ─────────
+  const hex = (r, g, b) => '#' + [r, g, b].map(v => Math.round(v).toString(16).padStart(2, '0')).join('');
+  function sample(x, y, w, h) {
+    x = Math.round(x); y = Math.round(y); w = Math.round(w); h = Math.round(h);
+    const pad = Math.max(2, Math.round(Math.min(h, 60) * 0.15));
+    const x0 = Math.max(0, x - pad), y0 = Math.max(0, y - pad), x1 = Math.min(natW, x + w + pad), y1 = Math.min(natH, y + h + pad);
+    if (x1 <= x0 || y1 <= y0) return { bg: '#ffffff', fg: '#111111' };
+    const iw = x1 - x0, ih = y1 - y0, d = sctx.getImageData(x0, y0, iw, ih).data;
+    const step = iw * ih > 250000 ? 3 : 1;
+    const R = [], G = [], B = [], inner = [];
+    for (let j = 0; j < ih; j += step) for (let i = 0; i < iw; i += step) {
+      const px = x0 + i, py = y0 + j, k = (j * iw + i) * 4;
+      if (px >= x && px < x + w && py >= y && py < y + h) inner.push(k);
+      else { R.push(d[k]); G.push(d[k + 1]); B.push(d[k + 2]); }
+    }
+    if (!R.length) inner.forEach(k => { R.push(d[k]); G.push(d[k + 1]); B.push(d[k + 2]); });
+    const med = a => { a.sort((p, q) => p - q); return a[a.length >> 1] || 255; };
+    const br = med(R), bgc = med(G), bb = med(B);
+    let maxd = 0; const dist = inner.map(k => { const v = Math.abs(d[k] - br) + Math.abs(d[k + 1] - bgc) + Math.abs(d[k + 2] - bb); if (v > maxd) maxd = v; return v; });
+    let fg;
+    if (maxd < 60) fg = (0.299 * br + 0.587 * bgc + 0.114 * bb) > 140 ? '#111111' : '#ffffff';
+    else {
+      let r = 0, g = 0, b = 0, n = 0; const th = maxd * 0.6;
+      inner.forEach((k, i) => { if (dist[i] >= th) { r += d[k]; g += d[k + 1]; b += d[k + 2]; n++; } });
+      fg = hex(r / n, g / n, b / n);
+    }
+    return { bg: hex(br, bgc, bb), fg };
+  }
+
+  // ───────── 상자 그리기 ─────────
+  const snapshot = it => ({ x: it.x, y: it.y, w: it.w, h: it.h, bg: it.bg, color: it.color, size: it.size, lineH: it.lineH, bold: it.bold, align: it.align, font: it.font, padL: it.padL || 0, padR: it.padR || 0 });
+  const isEdited = it => it.manual || it.styled || it.text !== it.orig;
+  const byId = id => items.find(i => i.id === id);
+
+  function renderAll() {
+    layer.innerHTML = ''; els.clear();
+    items.forEach(makeEl);
+    renderList(); renderProps();
+  }
+
+  function makeEl(it) {
+    const el = document.createElement('div'); el.className = 'box';
+    const t = document.createElement('div'); t.className = 'txt'; t.spellcheck = false;
+    const h = document.createElement('div'); h.className = 'handle';
+    el.append(t, h); layer.append(el); els.set(it.id, el);
+
+    el.addEventListener('pointerdown', e => {
+      if (el.classList.contains('editing') || tool !== 'select' || e.button !== 0) return;
+      e.stopPropagation(); select(it.id);
+      const sx = e.clientX, sy = e.clientY, ox = it.x, oy = it.y; let moved = false;
+      el.setPointerCapture(e.pointerId);
+      const mv = ev => {
+        const dx = (ev.clientX - sx) / zoom, dy = (ev.clientY - sy) / zoom;
+        if (!moved && Math.hypot(dx * zoom, dy * zoom) < 4) return;
+        moved = true; it.x = Math.round(ox + dx); it.y = Math.round(oy + dy); paint(it);
+      };
+      const up = () => { el.removeEventListener('pointermove', mv); el.removeEventListener('pointerup', up); if (moved) { it.styled = true; paint(it); updateListItem(it); } };
+      el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up);
+    });
+    el.addEventListener('dblclick', e => { if (tool === 'select') { e.stopPropagation(); startEdit(it.id); } });
+
+    h.addEventListener('pointerdown', e => {
+      e.stopPropagation(); e.preventDefault();
+      const sx = e.clientX, sy = e.clientY, ow = it.w, oh = it.h;
+      h.setPointerCapture(e.pointerId);
+      const mv = ev => {
+        it.w = Math.max(8, Math.round(ow + (ev.clientX - sx) / zoom));
+        it.h = Math.max(8, Math.round(oh + (ev.clientY - sy) / zoom));
+        it.styled = true; paint(it);
+      };
+      const up = () => { h.removeEventListener('pointermove', mv); h.removeEventListener('pointerup', up); updateListItem(it); };
+      h.addEventListener('pointermove', mv); h.addEventListener('pointerup', up);
+    });
+
+    t.addEventListener('input', () => {
+      it.text = t.innerText.replace(/\n$/, '');
+      grow(it); paintBoxOnly(it); updateListItem(it, true);
+    });
+    t.addEventListener('keydown', e => {
+      if (e.key === 'Escape' || (e.key === 'Enter' && (e.ctrlKey || e.metaKey))) { e.preventDefault(); t.blur(); }
+      e.stopPropagation();
+    });
+    t.addEventListener('blur', () => endEdit(it.id));
+    paint(it);
+  }
+
+  function grow(it) {
+    const need = it.text.split('\n').length * it.lineH;
+    if (need > it.h) it.h = need;
+  }
+
+  function paintBoxOnly(it) {
+    const el = els.get(it.id); if (!el) return;
+    Object.assign(el.style, { left: it.x + 'px', top: it.y + 'px', width: it.w + 'px', height: it.h + 'px', backgroundColor: it.bg });
+    el.classList.toggle('edited', isEdited(it));
+    el.classList.toggle('cellitem', !!it.cell);
+    el.classList.toggle('sel', it.id === selId);
+    el.dataset.n = items.indexOf(it) + 1;
+  }
+
+  function paint(it) {
+    const el = els.get(it.id); if (!el) return;
+    const t = el.firstChild;
+    Object.assign(t.style, { fontSize: it.size + 'px', lineHeight: it.lineH + 'px', color: it.color,
+      paddingLeft: (it.padL || 0) + 'px', paddingRight: (it.padR || 0) + 'px',
+      fontWeight: it.bold ? 700 : 400, textAlign: it.align, fontFamily: cssFont(it.font) });
+    if (document.activeElement !== t) t.innerText = it.text;
+    let gc = el.querySelector('canvas.gl'); if (gc) gc.remove();
+    el.classList.remove('glyph');
+    if (isEdited(it) && !el.classList.contains('editing')) {
+      const r = renderGlyphs(it);
+      if (r) {
+        r.canvas.className = 'gl';
+        Object.assign(r.canvas.style, { left: (r.x - it.x) + 'px', top: (r.y - it.y) + 'px' });
+        el.append(r.canvas); el.classList.add('glyph');
+      }
+    }
+    paintBoxOnly(it);
+  }
+
+  function startEdit(id) {
+    const it = byId(id), el = els.get(id); if (!it || !el) return;
+    select(id);
+    const t = el.firstChild;
+    t.contentEditable = 'plaintext-only';
+    if (t.contentEditable !== 'plaintext-only') t.contentEditable = 'true';
+    el.classList.add('editing');
+    t.focus();
+    const r = document.createRange(); r.selectNodeContents(t);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  function endEdit(id) {
+    const it = byId(id), el = els.get(id); if (!el) return;
+    const t = el.firstChild; t.contentEditable = 'false'; el.classList.remove('editing');
+    if (it) { paint(it); updateListItem(it); }
+  }
+
+  function select(id) {
+    const prev = selId; selId = id;
+    if (prev && els.get(prev)) els.get(prev).classList.remove('sel');
+    if (id && els.get(id)) els.get(id).classList.add('sel');
+    list.querySelectorAll('.item').forEach(n => n.classList.toggle('sel', +n.dataset.id === id));
+    const row = list.querySelector(`.item[data-id="${id}"]`);
+    if (row && document.activeElement?.closest('.item') !== row) row.scrollIntoView({ block: 'nearest' });
+    renderProps();
+  }
+
+  // ───────── 오른쪽 목록 ─────────
+  function renderList() {
+    $('#cnt').textContent = items.length ? `(${items.length})` : '';
+    if (!items.length) { list.innerHTML = `<div class="listempty">${img ? '인식된 글자가 없습니다.<br>위의 <b>＋ 글자 추가</b>로 직접 넣을 수 있어요.' : '이미지를 열면 글자를 자동으로 인식해서<br>여기에 영역별로 나열합니다.'}</div>`; return; }
+    list.innerHTML = '';
+    items.forEach((it, i) => {
+      const row = document.createElement('div'); row.className = 'item'; row.dataset.id = it.id;
+      row.innerHTML = `<span class="n">${i + 1}</span><div style="flex:1;min-width:0"><textarea rows="1"></textarea><div class="orig"></div></div>`;
+      const ta = row.querySelector('textarea'); ta.value = it.text;
+      ta.addEventListener('focus', () => { select(it.id); scrollToBox(it); });
+      ta.addEventListener('input', () => { it.text = ta.value; grow(it); paint(it); updateListItem(it, true); autoH(ta); });
+      list.append(row); updateListItem(it);
+      requestAnimationFrame(() => autoH(ta));
+    });
+    list.querySelectorAll('.item').forEach(n => n.classList.toggle('sel', +n.dataset.id === selId));
+  }
+  const autoH = ta => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
+  function updateListItem(it, skipValue) {
+    const row = list.querySelector(`.item[data-id="${it.id}"]`); if (!row) return;
+    const ta = row.querySelector('textarea');
+    if (!skipValue && document.activeElement !== ta) { ta.value = it.text; autoH(ta); }
+    row.classList.toggle('edited', isEdited(it));
+    row.querySelector('.orig').textContent = (!it.manual && it.text !== it.orig) ? it.orig : '';
+    if (skipValue && document.activeElement !== ta) { ta.value = it.text; autoH(ta); }
+  }
+  function scrollToBox(it) {
+    const vx = it.x * zoom + sizer.offsetLeft, vy = it.y * zoom + sizer.offsetTop;
+    if (vy < viewport.scrollTop || vy + it.h * zoom > viewport.scrollTop + viewport.clientHeight)
+      viewport.scrollTo({ top: vy - viewport.clientHeight / 3, behavior: 'smooth' });
+    if (vx < viewport.scrollLeft || vx > viewport.scrollLeft + viewport.clientWidth)
+      viewport.scrollTo({ left: vx - 40, behavior: 'smooth' });
+  }
+
+  // ───────── 속성 패널 ─────────
+  function renderProps() {
+    const it = byId(selId);
+    $('#noSel').hidden = !!it; $('#props').hidden = !it;
+    if (!it) return;
+    $('#pSize').value = it.size; $('#pLine').value = it.lineH;
+    $('#pColor').value = it.color; $('#pBg').value = it.bg;
+    $('#pBold').classList.toggle('on', it.bold);
+    document.querySelectorAll('#pAlign button').forEach(b => b.classList.toggle('on', b.dataset.a === it.align));
+    $('#pFont').value = it.font;
+    $('#pReset').disabled = it.manual;
+  }
+  function setProp(k, v) {
+    const it = byId(selId); if (!it) return;
+    it[k] = v; it.styled = true;
+    if (k === 'lineH') grow(it);
+    paint(it); updateListItem(it); renderProps();
+  }
+  $('#pSize').oninput = e => setProp('size', +e.target.value || 1);
+  $('#pLine').oninput = e => setProp('lineH', +e.target.value || 1);
+  $('#pColor').oninput = e => setProp('color', e.target.value);
+  $('#pBg').oninput = e => setProp('bg', e.target.value);
+  $('#pBold').onclick = () => { const it = byId(selId); if (it) setProp('bold', !it.bold); };
+  document.querySelectorAll('#pAlign button').forEach(b => b.onclick = () => setProp('align', b.dataset.a));
+  $('#pFont').onchange = e => { const it = byId(selId); if (!it) return; it.font = e.target.value; if (it.ink && it.text === it.orig) fitExact(it); setProp('font', it.font); };
+  $('#pEdit').onclick = () => selId && startEdit(selId);
+  $('#pResample').onclick = () => {
+    const it = byId(selId); if (!it) return;
+    const { bg, fg } = sample(it.x, it.y, it.w, it.h); it.bg = bg; it.color = fg; it.styled = true; paint(it); updateListItem(it); renderProps();
+  };
+  $('#pReset').onclick = () => {
+    const it = byId(selId); if (!it || it.manual) return;
+    Object.assign(it, it.o, { text: it.orig, styled: false }); paint(it); updateListItem(it); renderProps();
+  };
+  $('#pDel').onclick = () => deleteSel();
+  $('#gFont').onchange = e => {
+    defaultFont = e.target.value;
+    items.forEach(it => { const keep = it.text; it.font = defaultFont; if (it.ink) { it.text = it.orig; fitExact(it); it.text = keep; } if (it.o) Object.assign(it.o, snapshot(it), { x: it.o.x, y: it.o.y, w: it.o.w, h: it.o.h }); paint(it); });
+    renderProps();
+  };
+
+  function deleteSel() {
+    const i = items.findIndex(x => x.id === selId); if (i < 0) return;
+    items.splice(i, 1); selId = null; renderAll();
+  }
+
+  // ───────── 도구: 글자 추가 / 영역 지우기 ─────────
+  function setTool(t) {
+    tool = (tool === t) ? 'select' : t;
+    document.body.classList.toggle('tool-text', tool === 'text');
+    document.body.classList.toggle('tool-cover', tool === 'cover');
+    $('#toolText').classList.toggle('on', tool === 'text');
+    $('#toolCover').classList.toggle('on', tool === 'cover');
+    if (tool !== 'select') toast(tool === 'text' ? '글자를 넣을 곳을 클릭하거나 드래그하세요' : '지울 영역을 드래그하세요');
+  }
+  $('#toolText').onclick = () => setTool('text');
+  $('#toolCover').onclick = () => setTool('cover');
+
+  const toImg = e => { const r = stage.getBoundingClientRect(); return { x: (e.clientX - r.left) / zoom, y: (e.clientY - r.top) / zoom }; };
+  viewport.addEventListener('pointerdown', e => {
+    if (!img || e.button !== 0) return;
+    if (tool === 'select') {
+      if (!e.target.closest('.box') && !e.target.closest('.drop')) { if (document.activeElement?.classList.contains('txt')) document.activeElement.blur(); select(null); }
+      return;
+    }
+    if (!stage.contains(e.target) && e.target !== viewport && e.target !== sizer) return;
+    e.preventDefault();
+    const p0 = toImg(e); let p1 = p0;
+    viewport.setPointerCapture(e.pointerId);
+    const show = () => {
+      const x = Math.min(p0.x, p1.x), y = Math.min(p0.y, p1.y);
+      Object.assign(draft.style, { display: 'block', left: x + 'px', top: y + 'px', width: Math.abs(p1.x - p0.x) + 'px', height: Math.abs(p1.y - p0.y) + 'px' });
+    };
+    const mv = ev => { p1 = toImg(ev); show(); };
+    const up = () => {
+      viewport.removeEventListener('pointermove', mv); viewport.removeEventListener('pointerup', up);
+      draft.style.display = 'none';
+      let x = Math.min(p0.x, p1.x), y = Math.min(p0.y, p1.y), w = Math.abs(p1.x - p0.x), h = Math.abs(p1.y - p0.y);
+      const t = tool;
+      if (w < 6 || h < 6) {
+        if (t === 'cover') return;
+        h = guessLineH(); w = Math.max(160, h * 8); y = p0.y - h / 2; x = p0.x;
+      }
+      x = Math.round(Math.max(0, x)); y = Math.round(Math.max(0, y)); w = Math.round(w); h = Math.round(h);
+      const { bg, fg } = sample(x, y, w, h);
+      const lineH = t === 'text' ? h : Math.max(8, Math.min(h, guessLineH()));
+      const it = { id: nextId++, x, y, w, h, text: t === 'text' ? '새 글자' : '', orig: '', bg,
+                   color: t === 'text' ? (fg === bg ? '#111111' : fg) : fg, size: Math.round(lineH * 0.75), lineH,
+                   bold: false, align: 'left', font: defaultFont, manual: true, styled: false };
+      items.push(it); makeEl(it); renderList();
+      setTool(t); // 도구 해제
+      select(it.id);
+      if (t === 'text') startEdit(it.id);
+    };
+    viewport.addEventListener('pointermove', mv); viewport.addEventListener('pointerup', up);
+  });
+  function guessLineH() {
+    const hs = items.filter(i => !i.manual).map(i => i.lineH).sort((a, b) => a - b);
+    return hs.length ? hs[hs.length >> 1] : Math.max(16, Math.round(natH / 50));
+  }
+
+  // ───────── 보기 ─────────
+  $('#glyphMode').onchange = () => items.forEach(paint);
+  $('#btnStruct').onclick = () => { const on = document.body.classList.toggle('struct'); $('#btnStruct').classList.toggle('on', on); };
+  const cmp = $('#btnCompare');
+  const hold = v => () => document.body.classList.toggle('hide-edits', v);
+  cmp.addEventListener('pointerdown', hold(true));
+  ['pointerup', 'pointerleave', 'pointercancel'].forEach(t => cmp.addEventListener(t, hold(false)));
+
+  function setZoom(z) {
+    zoom = Math.min(6, Math.max(0.05, z));
+    stage.style.transform = `scale(${zoom})`;
+    sizer.style.width = natW * zoom + 'px'; sizer.style.height = natH * zoom + 'px';
+    $('#zVal').textContent = Math.round(zoom * 100) + '%';
+  }
+  function fit() { if (!natW) return; setZoom(Math.min((viewport.clientWidth - 48) / natW, (viewport.clientHeight - 48) / natH, 1.5)); }
+  $('#zIn').onclick = () => setZoom(zoom * 1.2);
+  $('#zOut').onclick = () => setZoom(zoom / 1.2);
+  $('#zFit').onclick = fit;
+  viewport.addEventListener('wheel', e => { if (img && (e.ctrlKey || e.metaKey)) { e.preventDefault(); setZoom(zoom * (e.deltaY < 0 ? 1.1 : 1 / 1.1)); } }, { passive: false });
+
+  // ───────── 단축키 ─────────
+  const isTyping = () => { const a = document.activeElement; return a && (a.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(a.tagName)); };
+  window.addEventListener('keydown', e => {
+    if (isTyping()) return;
+    const it = byId(selId);
+    if ((e.key === 'Delete' || e.key === 'Backspace') && it) { e.preventDefault(); deleteSel(); }
+    else if (e.key === 'Enter' && it) { e.preventDefault(); startEdit(it.id); }
+    else if (e.key === 'Escape') { if (tool !== 'select') setTool(tool); else select(null); }
+    else if (it && e.key.startsWith('Arrow')) {
+      e.preventDefault(); const s = e.shiftKey ? 10 : 1;
+      if (e.key === 'ArrowLeft') it.x -= s; if (e.key === 'ArrowRight') it.x += s;
+      if (e.key === 'ArrowUp') it.y -= s; if (e.key === 'ArrowDown') it.y += s;
+      it.styled = true; paint(it); updateListItem(it);
+    }
+  });
+  window.addEventListener('resize', () => { if (img && zoom < 1.01) fit(); });
+
+  // ───────── 내보내기 ─────────
+  $('#btnExport').onclick = () => exportImage('png');
+  $('#btnExportJpg').onclick = () => exportImage('jpg');
+  async function exportImage(fmt) {
+    if (!img) return;
+    if (document.activeElement?.classList.contains('txt')) document.activeElement.blur();
+    await document.fonts.ready;
+    const c = document.createElement('canvas'); c.width = natW; c.height = natH;
+    const ctx = c.getContext('2d');
+    ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, natW, natH); // JPG는 투명 배경이 없으므로 흰색
+    ctx.drawImage(img, 0, 0);
+    for (const it of items) {
+      if (!isEdited(it)) continue;
+      ctx.fillStyle = it.bg; ctx.fillRect(it.x, it.y, it.w, it.h);
+      if (!it.text) continue;
+      const gr = renderGlyphs(it);
+      if (gr) { ctx.drawImage(gr.canvas, gr.x, gr.y); continue; }
+      ctx.font = `${it.bold ? 700 : 400} ${it.size}px ${cssFont(it.font)}`;
+      ctx.fillStyle = it.color; ctx.textAlign = it.align;
+      const l0 = it.x + (it.padL || 0), r0 = it.x + it.w - (it.padR || 0);
+      const tx = it.align === 'center' ? (l0 + r0) / 2 : it.align === 'right' ? r0 : l0;
+      const fm = fontMetricsOnly(it.font, it.bold, it.size);
+      ctx.textBaseline = 'alphabetic';
+      const bo = (it.lineH - (fm.fa + fm.fd)) / 2 + fm.fa;
+      it.text.split('\n').forEach((ln, i) => ctx.fillText(ln, tx, it.y + it.lineH * i + bo));
+    }
+    const mime = fmt === 'jpg' ? 'image/jpeg' : 'image/png';
+    const name = fileName + '_편집.' + fmt;
+    // Claude 안에서 열린 경우: Claude 저장 기능 사용
+    if (window.claude && typeof window.claude.use === 'function') {
+      let dl = null; try { dl = await window.claude.use('downloads'); } catch (e) {}
+      if (dl) {
+        const blob = await new Promise(r => c.toBlob(r, mime, 0.95));
+        try { await dl.save({ filename: name, data: blob }); toast(fmt.toUpperCase() + '로 저장했습니다.'); return; }
+        catch (e) { if (e && e.code === 'declined') { toast('저장을 취소했습니다.'); return; } }
+      }
+    }
+    const url = c.toDataURL(mime, 0.95);
+    try { const a = document.createElement('a'); a.href = url; a.download = name; document.body.append(a); a.click(); a.remove(); } catch (e) {}
+    $('#outImg').src = url; $('#outLink').href = url; $('#outLink').download = name;
+    $('#outLink').textContent = name + ' 내려받기';
+    $('#out').style.display = 'flex';
+  }
+  $('#btnCopy').onclick = async () => {
+    const txt = [...items].sort((a, b) => (Math.abs(a.y - b.y) < Math.min(a.h, b.h) / 2 ? a.x - b.x : a.y - b.y))
+      .filter(i => i.text).map(i => i.text).join('\n');
+    try { await navigator.clipboard.writeText(txt); toast('텍스트를 복사했습니다.'); }
+    catch { const ta = document.createElement('textarea'); ta.value = txt; document.body.append(ta); ta.select(); document.execCommand('copy'); ta.remove(); toast('텍스트를 복사했습니다.'); }
+  };
+
+  let tt; function toast(m, ms) { const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), ms || 2600); }
+  window.addEventListener('error', e => toast('오류: ' + (e.message || e.error), 15000));
+  window.addEventListener('unhandledrejection', e => toast('오류: ' + ((e.reason && e.reason.message) || e.reason), 15000));
+})();
+</script>
+</body>
+</html>
